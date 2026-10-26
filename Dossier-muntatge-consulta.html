@@ -1,0 +1,815 @@
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Circuita · Dossier de consulta</title><style>body{margin:0;font:17px/1.7 system-ui,Segoe UI,sans-serif}main{max-width:1180px;margin:auto;padding:30px}h1{font-size:38px;line-height:1.2}h2{font-size:28px;margin-top:36px}table{border-collapse:collapse;display:block;overflow:auto;width:100%;font-size:14px}th,td{border:1px solid #cededc;padding:10px;min-width:110px;text-align:left;vertical-align:top}th{background:#eef3d3}pre{white-space:pre-wrap;overflow-wrap:anywhere}blockquote{margin:20px 0;padding:14px 20px;background:#e7f4f8;border-left:4px solid #0988a9}@media print{body{font-size:11px}main{padding:0}tr{break-inside:avoid}}</style><style id="circuita-shared-theme">
+/* Circuita · paleta consultada al web del Servei Educatiu de Badalona.
+   Colors globals del web: #8aa500 i #0988A9. Tons clars per als panells. */
+:root{--ink:#253840;--muted:#4c6169;--paper:#fff;--white:#fff;--line:#cbdde0;--green:#086f8a;--orange:#566800;--accent:#086f8a;--lime:#eef3d3;--se-olive:#8aa500;--se-blue:#0988a9}
+html,body{background:#fff}body{color:var(--ink)}a{color:#086f8a}a:hover{color:#526300}button.primary,button[aria-current=step],nav button[aria-current=page]{background:#086f8a;border-color:#086f8a;color:#fff}button.active,.active[aria-pressed=true]{background:#eaf1c7;border-color:#8aa500}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #086f8a;outline-offset:4px}
+.card{background:#e8f4f8;border-color:#c6e0e8;border-top:4px solid #0988a9}.card:nth-of-type(2n){background:#f0f4da;border-color:#dce5b5;border-top-color:#8aa500}.card.dark{background:#14556a;color:#fff;border-color:#14556a}.card.dark p{color:#f1f8fb}.card.dark a{color:#fff}.card .card{background:#fff}.callout,.note{border-color:#8aa500}.callout,.status,.ch-controls,.ch-routine{background:#edf3d5}.callout.alert,.feedback{background:#f2f5df;border-color:#8aa500}.feedback.good,.status.ok{background:#e1edbc}.eyebrow,.step,.ch-place{color:#526300}.muted,.source-caption,.bottom{color:#4c6169}th{background:#e7f1d1}.card textarea,.card select,.card input[type=number]{background:#fff}.route{background:#eef6f9;border-color:#c6e0e8}.piece{background:#eef3d3;border-color:#d6e0ae}.ch-progress li{background:#e7f3f7;color:#294954}.ch-progress li[aria-current]{background:#086f8a;color:#fff}.ch-guide{background:#edf3d5;color:#445600;border-color:#cddaa4}.ch-badges span{background:#fff;color:#36565e}.ch-code,pre{background:#173f50;color:#fff}.ch-parts button{background:#fff}.hero-art.real-kit{background:#eef6f9;border-color:#c6e0e8}.circuit{background:#e7f4f8}.hero-art.real-kit figcaption{color:#4c6169}.text-equivalent{color:#253840}.materials figcaption{background:#f0f4da}.bottom{background:#fff}.high{--ink:#11262e;--muted:#253840;--paper:#fff;--white:#fff;--line:#3d626d;--green:#07566b}
+.circuita-global-nav{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:10px;max-width:1240px;margin:0 auto;padding:18px 28px;background:#fff;border-bottom:1px solid #d8e5e8;box-sizing:border-box}.circuita-global-nav a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:10px 17px;min-height:46px;border:1px solid #bfd8df;border-radius:9px;background:#eaf4f8;color:#075b72;font:700 16px/1.35 system-ui,Segoe UI,sans-serif}.circuita-global-nav a:nth-child(2){background:#f0f4d9;border-color:#d3dea9;color:#465700}.circuita-global-nav a[aria-current=page]{background:#086f8a;border-color:#086f8a;color:#fff}.circuita-global-nav a:hover{box-shadow:0 0 0 2px #8aa500}.circuita-global-nav svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}
+.circuita-home-banner{max-width:1180px;margin:24px auto 0;padding:30px 34px;display:grid;grid-template-columns:1.4fr .65fr;align-items:center;gap:24px;background:#e8f4f8;border:1px solid #c6e0e8;border-top:7px solid #0988a9;border-radius:18px;box-sizing:border-box}.circuita-wordmark{font:850 clamp(70px,11.5vw,145px)/1 system-ui,Segoe UI,sans-serif;color:#0988a9;letter-spacing:-8px}.circuita-wordmark span{color:#8aa500;font-size:.52em;vertical-align:baseline;margin-left:6px}.circuita-home-banner .eyebrow{margin:0 0 15px;color:#486000;font:750 12px/1.4 system-ui,Segoe UI,sans-serif;letter-spacing:1.8px}.circuita-home-image{margin:0;padding:12px;background:#14556a;border-radius:12px;text-align:center;min-width:0}.circuita-home-image img{display:block;width:100%;height:165px;object-fit:contain}.circuita-home-image figcaption{font:12px/1.5 system-ui,Segoe UI,sans-serif;color:#fff;margin-top:7px}.circuita-home-image a{color:#fff}.circuita-home main{padding-top:28px}.circuita-home .cards>.card{background:#e3f2f8;border:1px solid #bfdce6;border-top:5px solid #0988a9}.circuita-home .cards>.card:nth-child(2){background:#eef3cf;border-color:#d4df9e;border-top-color:#8aa500}.circuita-home .cards>.card:nth-child(3){background:#e4f5f5;border-color:#bde0e3;border-top-color:#0988a9}.circuita-home .cards>.card:nth-child(4){background:#f3f6e3;border-color:#d6dfa9;border-top-color:#8aa500}.circuita-home .cards>.card a{font-weight:750}.circuita-home main>p:first-child{color:#526300;font-size:13px;font-weight:750;letter-spacing:1.2px}.circuita-home main>h1{font-size:38px;line-height:1.15;letter-spacing:-1px}
+@media(max-width:750px){.circuita-global-nav{justify-content:flex-start;padding:14px 18px;gap:8px}.circuita-global-nav a{font-size:14px;padding:10px 12px}.circuita-home-banner{margin:18px 18px 0;padding:24px;grid-template-columns:1fr;gap:20px}.circuita-wordmark{letter-spacing:-5px;font-size:clamp(66px,17vw,110px)}.circuita-home-image img{height:135px}.circuita-home main>h1{font-size:30px}.circuita-home main{padding-top:24px}}
+@media print{.circuita-global-nav,.circuita-home-banner{display:none!important}html,body{background:white!important}.card{box-shadow:none}}
+</style></head><body><nav class="circuita-global-nav" aria-label="Navegació principal de Circuita"><a href="Inici.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10L12 3l9 7v11H3z"/><path d="M9 21v-8h6v8"/></svg>Inici</a><a href="Guia-professorat.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h7a3 3 0 0 1 3 3v14a5 5 0 0 0-4-2H3z"/><path d="M21 4h-5a3 3 0 0 0-3 3v14a5 5 0 0 1 4-2h4z"/></svg>Guia docent</a><a href="Circuita.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="7" r="3"/><circle cx="18" cy="8" r="2.5"/><path d="M2 21v-3a6 6 0 0 1 12 0v3M15 14a5 5 0 0 1 7 4v3"/></svg>Alumnat</a></nav><main><h1>Circuita · Dossier de muntatge físic</h1>
+<p>La versió HTML té guia de connexions, calibrador i descàrrega de programes. Revisió documental no equival a prova amb el vostre maletí.</p>
+<h2>M0 · Primer circuit documentat</h2>
+<p>Preparació docent i 1r–2n de primària. Reproducció de les connexions de la làmina oficial 1; revisada visualment, no provada al vostre maletí.</p>
+<p>Material: Font Cirkids de 4,5 V amb 3 piles AAA; Resistència de 100 Ω; Mòdul LED vermell; 3 cables banana compatibles.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Font +</td>
+<td>R 100 Ω · extrem 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>R 100 Ω · extrem 2</td>
+<td>LED +</td>
+</tr>
+<tr>
+<td>3</td>
+<td>LED −</td>
+<td>Font −</td>
+</tr>
+</tbody></table>
+<ol>
+<li>Situa font, resistència i LED com a la làmina. A la quadrícula original: R entre C4–C6, LED entre D2–F2, font a la dreta. La base posiciona; no és una protoboard amb files conductores.</li>
+<li>Amb la font inactiva, fes les tres connexions numerades. Els extrems de la resistència es poden intercanviar. El LED sí que té polaritat.</li>
+<li>Revisa + i −. Activa segons el procediment de la font del vostre model. Si només alimenta amb TEST premut, mantén-lo per a la prova; no el pontis.</li>
+<li>Observa. Desactiva abans de canviar qualsevol cable. No afegeixis l’USB ni el controlador a aquest circuit de piles.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Font inactiva</td>
+<td>LED apagat</td>
+</tr>
+<tr>
+<td>Camí correcte i font activa</td>
+<td>LED encès; si no, revisa piles, contactes i polaritat amb la font inactiva</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>LED apagat: comprova l’estat de la font, els borns, el valor 100 Ω i la polaritat. No retiris la resistència per aconseguir més llum.</li>
+<li>La quadrícula no substitueix cap cable: col·locar dues peces al costat no les connecta.</li>
+</ul>
+<p>Guió: No necessita programació.</p>
+<p>Font: S1 · pàgina 1.</p>
+<h2>M1 · Llum amb interruptor</h2>
+<p>1r–4t de primària. Adaptació pròpia del circuit S1: afegir un comandament en sèrie.</p>
+<p>Material: M0: font, R 100 Ω i LED; 1 interruptor Cirkids; 4 cables.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Font +</td>
+<td>Interruptor · terminal 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Interruptor · terminal 2</td>
+<td>R 100 Ω · extrem 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>R 100 Ω · extrem 2</td>
+<td>LED +</td>
+</tr>
+<tr>
+<td>4</td>
+<td>LED −</td>
+<td>Font −</td>
+</tr>
+</tbody></table>
+<ol>
+<li>Comença amb el M0 provat i desconnectat. Identifica els dos terminals de l’interruptor, no el confonguis amb el commutador de tres.</li>
+<li>Insereix l’interruptor en el camí positiu segons la taula: cal un cable més que a M0.</li>
+<li>Revisa el retorn i activa la font. Prova obert i tancat.</li>
+<li>Per investigar una avaria, desactiva la font, retira només el retorn, reactiva breument i observa. Desactiva, repara i repeteix.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Interruptor obert</td>
+<td>Apagat</td>
+</tr>
+<tr>
+<td>Interruptor tancat, font activa</td>
+<td>Encès</td>
+</tr>
+<tr>
+<td>Retorn desconnectat amb la font prèviament inactiva</td>
+<td>Apagat quan tornes a activar</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>Si l’interruptor no controla: comprova que no hi hagi un cable que el ponti.</li>
+<li>Si no s’encén en tancar: contrasta primer el circuit M0.</li>
+</ul>
+<p>Guió: No necessita programació.</p>
+<p>Font: S1 + adaptació Circuita.</p>
+<h2>M2 · Avís amb polsador</h2>
+<p>1r–4t de primària. Adaptació pròpia de M0: substituir el comandament per un polsador.</p>
+<p>Material: Font de piles, R 100 Ω, LED; 1 polsador Cirkids; 4 cables.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Font +</td>
+<td>Polsador · terminal 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Polsador · terminal 2</td>
+<td>R 100 Ω · extrem 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>R 100 Ω · extrem 2</td>
+<td>LED +</td>
+</tr>
+<tr>
+<td>4</td>
+<td>LED −</td>
+<td>Font −</td>
+</tr>
+</tbody></table>
+<ol>
+<li>Prepara el circuit amb la font inactiva. Usa el mòdul BUTTON/polsador de dos terminals.</li>
+<li>Completa les connexions i comprova que no has fet un camí que eviti el polsador.</li>
+<li>Activa la font i compara repòs, premut i alliberat. El polsador no conserva per si sol la demanda.</li>
+<li>Acompanya l’avís amb una llegenda en paraula i símbol. Si el grup necessita una altra via perceptiva, acorda-la sense canviar l’objectiu de comprendre el polsador.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Repòs</td>
+<td>Apagat</td>
+</tr>
+<tr>
+<td>Premut i alimentat</td>
+<td>Encès</td>
+</tr>
+<tr>
+<td>Alliberat</td>
+<td>Apagat</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>Si es manté encès sense prémer: comprova el mòdul triat i si hi ha algun pont.</li>
+<li>Si la font també exigeix prémer TEST, cal mantenir l’alimentació durant tota la comparació; pot fer-ho una altra persona.</li>
+</ul>
+<p>Guió: No necessita programació.</p>
+<p>Font: S1 + adaptació Circuita.</p>
+<h2>M3 · Dues branques amb els comandaments del kit</h2>
+<p>5è–6è de primària. Disseny propi de dues branques; polaritat del mòdul bicolor contrastada amb S2, pàgina 190.</p>
+<p>Material: Font de piles; LED vermell i LED bicolor; R 100 Ω i R 1 kΩ; Interruptor i polsador; 8 unions de cable; alguns nodes han d’acceptar més d’un conductor segons els connectors del kit.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Font +</td>
+<td>Interruptor · terminal 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Interruptor · terminal 2</td>
+<td>R 100 Ω · extrem 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>R 100 Ω · extrem 2</td>
+<td>LED vermell +</td>
+</tr>
+<tr>
+<td>4</td>
+<td>LED vermell −</td>
+<td>Font −</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Font + · mateix node</td>
+<td>Polsador · terminal 1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Polsador · terminal 2</td>
+<td>R 1 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>R 1 kΩ · extrem 2</td>
+<td>Bicolor · GREEN</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Bicolor · RED</td>
+<td>Font − · mateix node</td>
+</tr>
+</tbody></table>
+<ol>
+<li>Comprova M1 abans d’afegir la segona branca. Desactiva la font.</li>
+<li>Munta A amb interruptor, R 100 Ω i LED vermell. Munta B amb polsador, R 1 kΩ i bicolor. Cada branca porta la seva resistència.</li>
+<li>Comparteix només els nodes Font + i Font −. Si els connectors no permeten les derivacions de manera estable, fes les proves per torns o usa M9; no forcis ni apilis connexions insegures.</li>
+<li>Activa i prova els quatre estats. B és momentani: una persona ha de mantenir el polsador. Els controls commutables A/B de l’app són una simplificació d’aquesta acció.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A obert, B lliure</td>
+<td>Totes apagades</td>
+</tr>
+<tr>
+<td>A tancat, B lliure</td>
+<td>Només A encesa</td>
+</tr>
+<tr>
+<td>A obert, B premut</td>
+<td>Només B encesa</td>
+</tr>
+<tr>
+<td>A tancat, B premut</td>
+<td>Les dues enceses; no cal que tinguin la mateixa brillantor</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>B molt feble: les resistències i els LEDs són diferents. Atenua la llum ambiental per observar; no eliminis resistències. Si no és observable, registra-ho i usa M9 per comparar estats.</li>
+<li>Si una branca depèn de l’altra, segueix cada camí fins a la font: pot haver quedat una connexió en sèrie.</li>
+</ul>
+<p>Guió: No necessita programació. Alternativa amb controlador: M9.</p>
+<p>Font: Disseny Circuita; S1 i S2 per als components.</p>
+<h2>M4 · Comparació física amb sèrie</h2>
+<p>5è–6è de primària; ampliació ESO. Experiment propi de comparació amb dues càrregues diferents; el model virtual no prediu la brillantor.</p>
+<p>Material: Font de piles; Interruptor; R 100 Ω; LED vermell i bicolor; 5 cables.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Font +</td>
+<td>Interruptor · terminal 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Interruptor · terminal 2</td>
+<td>R 100 Ω · extrem 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>R 100 Ω · extrem 2</td>
+<td>LED vermell +</td>
+</tr>
+<tr>
+<td>4</td>
+<td>LED vermell −</td>
+<td>Bicolor · GREEN</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bicolor · RED</td>
+<td>Font −</td>
+</tr>
+</tbody></table>
+<ol>
+<li>Desmunta M3 amb la font inactiva. Representa ara un únic camí amb els dos receptors.</li>
+<li>Revisa les dues polaritats i la resistència abans d’activar.</li>
+<li>Observa el resultat sense exigir que els dos LEDs siguin brillants. Amb 4,5 V i dos mòduls, poden lluir poc o no fer-ho de manera observable. Això depèn de la seva resposta elèctrica, no només de la continuïtat.</li>
+<li>Desactiva abans d’obrir un cable. Compara el camí compartit amb M3. Si vols demostrar només la topologia, usa també el model virtual; no augmentis la tensió de la font.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Camí únic obert</td>
+<td>No hi ha corrent de branca; LEDs apagats</td>
+</tr>
+<tr>
+<td>Camí tancat</td>
+<td>Registra l’observació real: brillantor no garantida amb aquesta font i aquests mòduls</td>
+</tr>
+<tr>
+<td>Unió entre LEDs interrompuda amb font inactiva abans del canvi</td>
+<td>Tots dos queden sense camí complet</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>Dos LEDs apagats amb camí tancat no demostren per si sols una avaria. Pot faltar marge de tensió per a les dues càrregues.</li>
+<li>No comparis quantitats de consum a partir de la brillantor.</li>
+</ul>
+<p>Guió: No necessita programació.</p>
+<p>Font: Disseny experimental Circuita.</p>
+<h2>M5 · Primera sortida del microcontrolador</h2>
+<p>Preparació docent; primària superior i ESO. Connexió del mòdul LED a un pin digital i GND documentada a S2, pàgina 190. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.</p>
+<p>Material: Controlador Cirkids compatible UNO; Mòdul LED vermell; 3 cables; Ordinador i cable USB de dades compatible; R 1 kΩ en sèrie amb el LED: protecció addicional proposada per Circuita.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Controlador · D11</td>
+<td>R 1 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>R 1 kΩ · extrem 2</td>
+<td>Mòdul LED +</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mòdul LED −</td>
+<td>Controlador · GND</td>
+</tr>
+</tbody></table>
+<ol>
+<li>A la sortida digital posa també R 1 kΩ en sèrie amb el LED. És una adaptació pròpia per limitar el corrent del pin; la font consultada representa el mòdul connectat directament.</li>
+<li>Retira el circuit de piles i desconnecta l’USB per preparar. Aquest muntatge s’alimenta per USB: no hi afegeixis la font de 4,5 V.</li>
+<li>Localitza per inscripció D11 i GND al controlador. Uneix-los al mòdul LED com indica la taula. No és una instrucció per a un LED solt.</li>
+<li>Connecta el cable de dades, selecciona el dispositiu adequat i carrega 00_Prova_LED.</li>
+<li>Comprova encès/apagat lent. Si la càrrega funciona però no la llum, revisa D11, polaritat i GND amb USB desconnectat.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Programa 00 carregat</td>
+<td>Alterna aproximadament 1,5 s encès i 1,5 s apagat</td>
+</tr>
+<tr>
+<td>USB desconnectat</td>
+<td>Sense alimentació des d’aquest USB</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>No apareix cap port: prova un cable USB de dades, permisos i connexió; no concloguis que el kit està espatllat.</li>
+<li>No instal·lis un controlador USB genèric a l’atzar: identifica primer el dispositiu i la documentació del fabricant.</li>
+</ul>
+<p>Guió: INICIALITZA: configura D11 com a sortida. BUCLE: encén D11 → espera 1,5 s → apaga D11 → espera 1,5 s. Aquest guió serveix per a una prova de llum, no per a una aturada prioritària.</p>
+<p>Font: S2, pàgina 190; programa propi.</p>
+<h2>M6 · Sensor de llum, calibratge i habilitació</h2>
+<p>1r d’ESO; ampliació de 5è–6è. Topologia sensor–resistència–entrada documentada a S2, pàgines 187–188. Valor 10 kΩ, A0 i programes: selecció de treball de Circuita. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.</p>
+<p>Material: Controlador i USB de dades; Sensor de llum Cirkids; R 10 kΩ; Mòdul LED vermell; 7 unions bàsiques; 2 unions opcionals per a habilitació; Interruptor opcional per a habilitació; R 1 kΩ en sèrie amb el LED: protecció addicional proposada per Circuita.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Controlador · 5V</td>
+<td>Sensor · +</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sensor · −</td>
+<td>Controlador · A0 · node N</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Node N (sensor − i A0)</td>
+<td>R 10 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>R 10 kΩ · extrem 2</td>
+<td>Controlador · GND</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Controlador · D11</td>
+<td>R 1 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>R 1 kΩ · extrem 2</td>
+<td>Mòdul LED +</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Mòdul LED −</td>
+<td>Controlador · GND · mateix node</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Opcional: controlador · D2</td>
+<td>Interruptor · terminal 1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Interruptor · terminal 2</td>
+<td>GND · mateix node (opcional)</td>
+</tr>
+</tbody></table>
+<ol>
+<li>A la sortida digital posa també R 1 kΩ en sèrie amb el LED. És una adaptació pròpia per limitar el corrent del pin; la font consultada representa el mòdul connectat directament.</li>
+<li>Desconnecta USB i piles. Munta el sensor segons la taula. El node N és una unió compartida de tres punts: sensor −, A0 i un extrem de R. GND arriba a l’altre extrem de R.</li>
+<li>No posis sensor − directament a GND: desapareixeria el senyal útil d’aquest muntatge. Prepara derivacions només amb connexions compatibles i estables.</li>
+<li>Carrega 01_Calibratge i obre el monitor a 9600 bauds. Pren cinc lectures amb el sensor cobert i cinc amb la llum de treball. Calcula les dues mitjanes al calibrador del dossier.</li>
+<li>Genera 02, 03 o 05 amb aquestes dades. Llum 0 és la condició coberta; 100 és la condició de referència clara, no lux. Les dues mitjanes han de diferir almenys 20 comptes ADC per a aquesta proposta.</li>
+<li>Per al repte d’habilitació afegeix l’interruptor entre D2 i GND amb USB desconnectat. INPUT_PULLUP fa que tancat sigui LOW; el programa ho interpreta com habilitat.</li>
+<li>Carrega, prova i anota la lectura normalitzada i la sortida. El cas exactament 30 és més fàcil de validar al simulador; el soroll pot impedir mantenir-lo físicament.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Calibratge encara pendent</td>
+<td>Els programes 02/03/05 subministrats mantenen el LED apagat i avisen al monitor</td>
+</tr>
+<tr>
+<td>02 amb lectura normalitzada &lt; 30</td>
+<td>LED encès</td>
+</tr>
+<tr>
+<td>02 amb lectura ≥ 30</td>
+<td>LED apagat</td>
+</tr>
+<tr>
+<td>03 amb llum baixa i interruptor obert</td>
+<td>LED apagat</td>
+</tr>
+<tr>
+<td>03 amb llum baixa i interruptor tancat</td>
+<td>LED encès</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>Lectura sempre 0 o 1023: revisa A0, node N, R i alimentació; pot haver-hi saturació o una unió incorrecta.</li>
+<li>Les lectures augmenten en cobrir: no ho amaguis. El calibrador admet els dos sentits perquè usa les mitjanes, però revisa la correspondència amb el sensor del kit.</li>
+<li>Si canvia la il·luminació o l’emplaçament, repeteix el calibratge.</li>
+</ul>
+<p>Guió: INICIALITZA: port sèrie 9600; D11 sortida; per a l’habilitació, D2 entrada amb pull-up. BUCLE: llegeix A0 → normalitza amb els dos valors mesurats → calcula L &lt; 30 → combina amb habilitat si escau → escriu la sortida → envia la lectura al monitor. No facis servir «espera» llarga si després afegeixes una aturada.</p>
+<p>Font: S2, pàgines 187–190; adaptació de calibratge pròpia.</p>
+<h2>M7 · Seqüència amb aturada i rearme</h2>
+<p>2n d’ESO. Sortida documentada a S2; entrades INPUT_PULLUP i temporització sense bloqueig segons Arduino. Disseny del programa i rearme propis. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.</p>
+<p>Material: Controlador amb USB; LED vermell; Interruptor (aturada); Polsador (rearme); 7 cables/unions; R 1 kΩ en sèrie amb el LED: protecció addicional proposada per Circuita.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>D11</td>
+<td>R 1 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>R 1 kΩ · extrem 2</td>
+<td>Mòdul LED +</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mòdul LED −</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>4</td>
+<td>D2</td>
+<td>Interruptor ATURADA · terminal 1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Interruptor ATURADA · terminal 2</td>
+<td>GND · mateix node</td>
+</tr>
+<tr>
+<td>6</td>
+<td>D8</td>
+<td>Polsador REARME · terminal 1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Polsador REARME · terminal 2</td>
+<td>GND · mateix node</td>
+</tr>
+</tbody></table>
+<ol>
+<li>A la sortida digital posa també R 1 kΩ en sèrie amb el LED. És una adaptació pròpia per limitar el corrent del pin; la font consultada representa el mòdul connectat directament.</li>
+<li>Desconnecta USB i prepara les sis unions. D2 i D8 són entrades amb pull-up; els comandaments tanquen cap a GND, mai cap a 5V en aquest esquema.</li>
+<li>Carrega 04_Sequencia_aturada. A l’inici, la sortida és apagada i espera rearme.</li>
+<li>Amb l’aturada oberta, prem i deixa anar REARME. Comprova dos segons encès i dos apagat.</li>
+<li>Tanca ATURADA mentre és encès: el programa apaga a la següent iteració sense esperar que acabi la fase. Obre ATURADA: es manté apagat. Prem REARME per començar de nou.</li>
+<li>Repeteix l’aturada durant una fase apagada. Prem REARME amb ATURADA encara activa: no ha de començar.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>En arrencar</td>
+<td>Apagat fins a rearme</td>
+</tr>
+<tr>
+<td>Rearme amb aturada oberta</td>
+<td>Cicle lent 2 s encès / 2 s apagat</td>
+</tr>
+<tr>
+<td>Aturada tancada en qualsevol fase</td>
+<td>Apagat amb prioritat</td>
+</tr>
+<tr>
+<td>Retirar l’aturada</td>
+<td>Continua apagat</td>
+</tr>
+<tr>
+<td>Nou pols de rearme amb aturada oberta</td>
+<td>Nou cicle des de la primera fase</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>No arrenca: cal un nou pols de rearme, no mantenir-lo premut des d’abans d’obrir l’aturada.</li>
+<li>Rebot del polsador: el programa filtra l’entrada de rearme 30 ms. L’aturada no espera aquest filtre.</li>
+<li>Un LED de maqueta no és un sistema d’emergència certificat.</li>
+</ul>
+<p>Guió: INICIALITZA: aturada enclavada, LED apagat. REPETEIX: llegeix ATURADA; si activa, enclava i apaga. Si no, detecta un NOU pols de REARME. Només aleshores allibera l’aturada i inicia el rellotge. Calcula fase amb temps transcorregut, sense espera bloquejant. Fases 0/1 encès; 2/3 apagat.</p>
+<p>Font: S2 + Arduino InputPullupSerial / BlinkWithoutDelay; programa propi.</p>
+<h2>M8 · Histèresi amb el sensor real</h2>
+<p>2n d’ESO. Mateix maquinari que M6 sense habilitació; regla d’estat pròpia. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.</p>
+<p>Material: M6: controlador, sensor, R 10 kΩ i LED; Calibratge de la ubicació fet; R 1 kΩ en sèrie amb el LED: protecció addicional proposada per Circuita.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>5V</td>
+<td>Sensor +</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sensor −</td>
+<td>A0 i un extrem de R 10 kΩ</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Altre extrem de R 10 kΩ</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>4</td>
+<td>D11</td>
+<td>R 1 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>R 1 kΩ · extrem 2</td>
+<td>LED +</td>
+</tr>
+<tr>
+<td>6</td>
+<td>LED −</td>
+<td>GND</td>
+</tr>
+</tbody></table>
+<ol>
+<li>A la sortida digital posa també R 1 kΩ en sèrie amb el LED. És una adaptació pròpia per limitar el corrent del pin; la font consultada representa el mòdul connectat directament.</li>
+<li>Conserva el muntatge M6 verificat. Torna a calibrar si has canviat la llum o el lloc.</li>
+<li>Genera 05_Histeresi amb les dues mitjanes mesurades i carrega’l. L’estat inicial és apagat.</li>
+<li>Baixa L sota 30; després situa’l entre 30 i 40. Observa que conserva l’encesa.</li>
+<li>Puja sobre 40; torna entre 30 i 40. Ara conserva l’apagat. Anota d’on venies en cada prova.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>L = 29 partint d’apagat (o valor físic &lt; 30)</td>
+<td>S’encén</td>
+</tr>
+<tr>
+<td>L = 35 venint d’encesa</td>
+<td>Conserva encesa</td>
+</tr>
+<tr>
+<td>L = 41 (o valor físic &gt; 40)</td>
+<td>S’apaga</td>
+</tr>
+<tr>
+<td>L = 35 venint d’apagat</td>
+<td>Conserva apagada</td>
+</tr>
+<tr>
+<td>L = 30 o 40 exactes al model virtual</td>
+<td>Conserva l’estat anterior</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>Una mateixa lectura intermèdia pot donar dues sortides correctes: falta saber l’estat anterior.</li>
+<li>No substitueixis els dos llindars per un únic si/altrament: perdries la memòria dins de la banda.</li>
+</ul>
+<p>Guió: INICIALITZA: estat = apagat. BUCLE: llegeix i normalitza L. SI L &lt; 30: estat = encès. SI NO, SI L &gt; 40: estat = apagat. SI NO: no canviïs estat. Escriu estat a D11.</p>
+<p>Font: M6 + desenvolupament propi.</p>
+<h2>M9 · Dues zones programades, alternativa</h2>
+<p>Primària superior amb modelatge; ESO. D11 per al LED i D10 per al bicolor documentats a S2, pàgina 190. Controls i programa propis. S’hi afegeixen dues R d’1 kΩ com a protecció de les sortides.</p>
+<p>Material: Controlador USB; LED vermell i mòdul bicolor; Interruptor i polsador; 10 unions; 2 resistències d’1 kΩ: si el maletí només en té una, cal compartir la segona amb un altre kit o mantenir M3 com a alternativa sense programar.</p>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th>Des de</th>
+<th>Fins a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>D11</td>
+<td>R A 1 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>R A 1 kΩ · extrem 2</td>
+<td>LED vermell +</td>
+</tr>
+<tr>
+<td>3</td>
+<td>LED vermell −</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>4</td>
+<td>D10</td>
+<td>R B 1 kΩ · extrem 1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>R B 1 kΩ · extrem 2</td>
+<td>Bicolor · GREEN</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Bicolor · RED</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>7</td>
+<td>D2</td>
+<td>Interruptor A · terminal 1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Interruptor A · terminal 2</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>9</td>
+<td>D8</td>
+<td>Polsador B · terminal 1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Polsador B · terminal 2</td>
+<td>GND</td>
+</tr>
+</tbody></table>
+<ol>
+<li>Aquesta ampliació afegeix dues resistències d’1 kΩ, una per sortida. És una adaptació pròpia; comprova disponibilitat abans de triar-la.</li>
+<li>Desconnecta USB. Prepara les dues sortides amb els mòduls del kit, no LEDs solts.</li>
+<li>Prepara els controls com a entrades amb pull-up: cadascun tanca a GND.</li>
+<li>Carrega 06_Dues_zones. A manté estat segons l’interruptor; B dura mentre el polsador està premut.</li>
+<li>Compara els quatre casos. Aquí es controlen dos pins diferents; no és el mateix muntatge passiu de piles que M3.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prova</th>
+<th>Esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A obert, B lliure</td>
+<td>Totes apagades</td>
+</tr>
+<tr>
+<td>A tancat, B lliure</td>
+<td>Només A</td>
+</tr>
+<tr>
+<td>A obert, B premut</td>
+<td>Només B</td>
+</tr>
+<tr>
+<td>A tancat, B premut</td>
+<td>Totes dues</td>
+</tr>
+</tbody></table>
+<p>Errors i revisió:</p>
+<ul>
+<li>Mai uneixis D10 i D11: són sortides diferents, no un node comú.</li>
+<li>Si el bicolor és vermell en comptes de verd, comprova GREEN/RED amb USB desconnectat.</li>
+</ul>
+<p>Guió: INICIALITZA: D11 i D10 sortides; D2 i D8 entrades pull-up. BUCLE: A = (D2 és LOW); B = (D8 és LOW). Escriu A a D11 i B a D10.</p>
+<p>Font: S2, pàgina 190 + programa propi.</p>
+<h2>Correspondència amb els reptes</h2>
+<ul>
+<li>p1-light · Una llum per al racó de lectura: M0, M1</li>
+<li>p1-repair · La llum de la maqueta s’ha apagat: M1</li>
+<li>p1-button · Una llum només quan la demanem: M2</li>
+<li>p2-button · Un avís per compartir la lectura: M2</li>
+<li>p2-switch · Un missatge que es manté: M1</li>
+<li>p2-diagnose · El taller de reparació del barri: M2</li>
+<li>p3-parallel · Dues llums al passeig: M3, M9</li>
+<li>p3-series · Dos camins o un de sol?: M3, M4</li>
+<li>p3-service · Una zona en ús, una zona apagada: M3, M9</li>
+<li>e1-sensor · Un camí de maqueta que respon a la llum: M5, M6</li>
+<li>e1-enable · La maqueta té un horari d’ús: M6</li>
+<li>e1-debug · El 30 també s’encén: és un error?: M6</li>
+<li>e2-sequence · Un avís lluminós per a una maqueta del litoral: M5, M7</li>
+<li>e2-hysteresis · Un fanal que no oscil·la: M6, M8</li>
+<li>e2-service · Auditoria d’un prototip de barri: M7</li>
+</ul>
+<h2>Fonts</h2>
+<p>S1: <a href="https://academiadeinventores.com/wp-content/uploads/2024/03/laminas_proyectos_cirkids_v6.pdf">https://academiadeinventores.com/wp-content/uploads/2024/03/laminas_proyectos_cirkids_v6.pdf</a></p>
+<p>S2: <a href="https://steambraceproject.eu/wp-content/uploads/2025/02/STEAMBRACE_WP3_D3.5_Training-of-students-in-STEAM_fin01_compressed-1.pdf">https://steambraceproject.eu/wp-content/uploads/2025/02/STEAMBRACE_WP3_D3.5_Training-of-students-in-STEAM_fin01_compressed-1.pdf</a> (pàgines PDF 187–190).</p>
+<p>Arduino: InputPullupSerial, BlinkWithoutDelay i analogRead, documentació oficial.</p>
+<p>Els esquemes que afegeixen comandaments, derivacions, rearme, calibratge i programes són propostes pròpies; no s’atribueixen al fabricant. Els LEDs de sèrie poden no il·luminar-se prou amb la font indicada. La primera prova la fa el docent.</p>
+</main></body></html>

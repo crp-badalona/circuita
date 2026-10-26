@@ -1,0 +1,101 @@
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Circuita · Verificació</title><style>body{margin:0;font:17px/1.7 system-ui,Segoe UI,sans-serif}main{max-width:1180px;margin:auto;padding:30px}h1{font-size:38px;line-height:1.2}h2{font-size:28px;margin-top:36px}table{border-collapse:collapse;display:block;overflow:auto;width:100%;font-size:14px}th,td{border:1px solid #cededc;padding:10px;min-width:110px;text-align:left;vertical-align:top}th{background:#eef3d3}pre{white-space:pre-wrap;overflow-wrap:anywhere}blockquote{margin:20px 0;padding:14px 20px;background:#e7f4f8;border-left:4px solid #0988a9}@media print{body{font-size:11px}main{padding:0}tr{break-inside:avoid}}</style><style id="circuita-shared-theme">
+/* Circuita · paleta consultada al web del Servei Educatiu de Badalona.
+   Colors globals del web: #8aa500 i #0988A9. Tons clars per als panells. */
+:root{--ink:#253840;--muted:#4c6169;--paper:#fff;--white:#fff;--line:#cbdde0;--green:#086f8a;--orange:#566800;--accent:#086f8a;--lime:#eef3d3;--se-olive:#8aa500;--se-blue:#0988a9}
+html,body{background:#fff}body{color:var(--ink)}a{color:#086f8a}a:hover{color:#526300}button.primary,button[aria-current=step],nav button[aria-current=page]{background:#086f8a;border-color:#086f8a;color:#fff}button.active,.active[aria-pressed=true]{background:#eaf1c7;border-color:#8aa500}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #086f8a;outline-offset:4px}
+.card{background:#e8f4f8;border-color:#c6e0e8;border-top:4px solid #0988a9}.card:nth-of-type(2n){background:#f0f4da;border-color:#dce5b5;border-top-color:#8aa500}.card.dark{background:#14556a;color:#fff;border-color:#14556a}.card.dark p{color:#f1f8fb}.card.dark a{color:#fff}.card .card{background:#fff}.callout,.note{border-color:#8aa500}.callout,.status,.ch-controls,.ch-routine{background:#edf3d5}.callout.alert,.feedback{background:#f2f5df;border-color:#8aa500}.feedback.good,.status.ok{background:#e1edbc}.eyebrow,.step,.ch-place{color:#526300}.muted,.source-caption,.bottom{color:#4c6169}th{background:#e7f1d1}.card textarea,.card select,.card input[type=number]{background:#fff}.route{background:#eef6f9;border-color:#c6e0e8}.piece{background:#eef3d3;border-color:#d6e0ae}.ch-progress li{background:#e7f3f7;color:#294954}.ch-progress li[aria-current]{background:#086f8a;color:#fff}.ch-guide{background:#edf3d5;color:#445600;border-color:#cddaa4}.ch-badges span{background:#fff;color:#36565e}.ch-code,pre{background:#173f50;color:#fff}.ch-parts button{background:#fff}.hero-art.real-kit{background:#eef6f9;border-color:#c6e0e8}.circuit{background:#e7f4f8}.hero-art.real-kit figcaption{color:#4c6169}.text-equivalent{color:#253840}.materials figcaption{background:#f0f4da}.bottom{background:#fff}.high{--ink:#11262e;--muted:#253840;--paper:#fff;--white:#fff;--line:#3d626d;--green:#07566b}
+.circuita-global-nav{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:10px;max-width:1240px;margin:0 auto;padding:18px 28px;background:#fff;border-bottom:1px solid #d8e5e8;box-sizing:border-box}.circuita-global-nav a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:10px 17px;min-height:46px;border:1px solid #bfd8df;border-radius:9px;background:#eaf4f8;color:#075b72;font:700 16px/1.35 system-ui,Segoe UI,sans-serif}.circuita-global-nav a:nth-child(2){background:#f0f4d9;border-color:#d3dea9;color:#465700}.circuita-global-nav a[aria-current=page]{background:#086f8a;border-color:#086f8a;color:#fff}.circuita-global-nav a:hover{box-shadow:0 0 0 2px #8aa500}.circuita-global-nav svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}
+.circuita-home-banner{max-width:1180px;margin:24px auto 0;padding:30px 34px;display:grid;grid-template-columns:1.4fr .65fr;align-items:center;gap:24px;background:#e8f4f8;border:1px solid #c6e0e8;border-top:7px solid #0988a9;border-radius:18px;box-sizing:border-box}.circuita-wordmark{font:850 clamp(70px,11.5vw,145px)/1 system-ui,Segoe UI,sans-serif;color:#0988a9;letter-spacing:-8px}.circuita-wordmark span{color:#8aa500;font-size:.52em;vertical-align:baseline;margin-left:6px}.circuita-home-banner .eyebrow{margin:0 0 15px;color:#486000;font:750 12px/1.4 system-ui,Segoe UI,sans-serif;letter-spacing:1.8px}.circuita-home-image{margin:0;padding:12px;background:#14556a;border-radius:12px;text-align:center;min-width:0}.circuita-home-image img{display:block;width:100%;height:165px;object-fit:contain}.circuita-home-image figcaption{font:12px/1.5 system-ui,Segoe UI,sans-serif;color:#fff;margin-top:7px}.circuita-home-image a{color:#fff}.circuita-home main{padding-top:28px}.circuita-home .cards>.card{background:#e3f2f8;border:1px solid #bfdce6;border-top:5px solid #0988a9}.circuita-home .cards>.card:nth-child(2){background:#eef3cf;border-color:#d4df9e;border-top-color:#8aa500}.circuita-home .cards>.card:nth-child(3){background:#e4f5f5;border-color:#bde0e3;border-top-color:#0988a9}.circuita-home .cards>.card:nth-child(4){background:#f3f6e3;border-color:#d6dfa9;border-top-color:#8aa500}.circuita-home .cards>.card a{font-weight:750}.circuita-home main>p:first-child{color:#526300;font-size:13px;font-weight:750;letter-spacing:1.2px}.circuita-home main>h1{font-size:38px;line-height:1.15;letter-spacing:-1px}
+@media(max-width:750px){.circuita-global-nav{justify-content:flex-start;padding:14px 18px;gap:8px}.circuita-global-nav a{font-size:14px;padding:10px 12px}.circuita-home-banner{margin:18px 18px 0;padding:24px;grid-template-columns:1fr;gap:20px}.circuita-wordmark{letter-spacing:-5px;font-size:clamp(66px,17vw,110px)}.circuita-home-image img{height:135px}.circuita-home main>h1{font-size:30px}.circuita-home main{padding-top:24px}}
+@media print{.circuita-global-nav,.circuita-home-banner{display:none!important}html,body{background:white!important}.card{box-shadow:none}}
+</style></head><body><nav class="circuita-global-nav" aria-label="Navegació principal de Circuita"><a href="Inici.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10L12 3l9 7v11H3z"/><path d="M9 21v-8h6v8"/></svg>Inici</a><a href="Guia-professorat.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h7a3 3 0 0 1 3 3v14a5 5 0 0 0-4-2H3z"/><path d="M21 4h-5a3 3 0 0 0-3 3v14a5 5 0 0 1 4-2h4z"/></svg>Guia docent</a><a href="Circuita.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="7" r="3"/><circle cx="18" cy="8" r="2.5"/><path d="M2 21v-3a6 6 0 0 1 12 0v3M15 14a5 5 0 0 1 7 4v3"/></svg>Alumnat</a></nav><main><h1>Circuita · Verificació de la versió de muntatge</h1>
+<p>Data: 26 d’octubre de 2026.</p>
+<h2>Revisió documental</h2>
+<ul>
+<li>Làmines Cirkids originals: 13 pàgines revisades en miniatura; pàgines 1 i 10 inspeccionades ampliades. La pàgina 1 documenta la resistència de 100 Ω en sèrie amb el LED.</li>
+<li>Activitat amb autoria d’Academia de Inventores a STEAMbrace D3.5: pàgines PDF 187–190 llegides i diagrames de sensor i LED revisats.</li>
+<li>Arduino: exemples oficials de pull-up, temporització sense bloqueig i lectura analògica com a referències.</li>
+<li>La tria de 10 kΩ per al sensor, els circuits derivats, el calibratge i el rearme són propostes pròpies.</li>
+</ul>
+<h2>Compilació dels programes</h2>
+<p>Eines oficials descarregades de les distribucions d’Arduino dins de l’espai de treball, sense instal·lar-les globalment.</p>
+<ul>
+<li>Compilador: AVR GCC 7.3.0-atmel3.6.1-arduino7.</li>
+<li>Core: Arduino AVR 1.8.8.</li>
+<li>Objectiu: ATmega328P / Arduino Uno, 16 MHz.</li>
+<li>Mètode: compilació C++ de cada sketch i enllaç contra el core oficial. La descoberta de plataformes d’Arduino CLI ha fallat per accés al directori en aquest entorn; s’han invocat directament el compilador i l’enllaçador AVR oficials.</li>
+<li>7 sketches de referència + 6 variants calibrades, en sentit directe i invers: <strong>13 compilacions i enllaços superats</strong>. Les variants calibrades comproven també les branques que el valor CALIBRATED=false desactiva a la distribució de referència.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Programa / variant</th>
+<th>Resultat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>00_Prova_LED</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>01_Calibratge</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>02_Llum_automatica</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>02_Llum_automatica calibrat directe</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>02_Llum_automatica calibrat invers</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>03_Llum_habilitada</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>03_Llum_habilitada calibrat directe</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>03_Llum_habilitada calibrat invers</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>04_Sequencia_aturada</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>05_Histeresi</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>05_Histeresi calibrat directe</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>05_Histeresi calibrat invers</td>
+<td>Compila i enllaça</td>
+</tr>
+<tr>
+<td>06_Dues_zones</td>
+<td>Compila i enllaça</td>
+</tr>
+</tbody></table>
+<h2>Comprovacions de l’aplicació</h2>
+<ul>
+<li>Dossier: 4.182 comprovacions de calibratge, generació de codi, correspondències, fitxes i estructura de programes.</li>
+<li>Motor de reptes de l’alumnat: 520 comprovacions superades després d’integrar el dossier.</li>
+<li>Guia docent: 764 comprovacions de lògica/contingut i 41 d’esdeveniments del runtime amb DOM simulat, de la versió anterior a l’enllaç al dossier.</li>
+<li>En navegador: calibratge amb dues sèries vàlides, conversió intermèdia a 50/100, rebuig de sèries massa properes, ocultació del generador quan les dades no són vàlides, filtre d’etapa i revelació de connexions.</li>
+</ul>
+<h2>Allò que continua requerint una prova del centre</h2>
+<p>No s’ha connectat cap controlador ni fet cap muntatge físic. No hi ha fotografies de muntatges construïts per nosaltres. Les imatges del kit i la primera làmina són originals de les fonts; la resta són plans i instruccions pròpies.</p>
+<p>Abans d’usar-ho amb alumnat: compara model i inventari, prova M0/M1/M2 o M5 segons l’etapa, comprova derivacions i alimentació, calibra el sensor si escau i registra la prova al dossier. L’autoobservació «he provat» l’emplena el docent; l’app no la pot verificar.</p>
+<p>No hi ha una auditoria d’accessibilitat, una validació elèctrica del vostre kit ni un pilotatge amb alumnat.</p>
+<p>Les sortides digitals dels muntatges físics afegeixen una R d’1 kΩ en sèrie amb cada LED com a protecció pròpia de Circuita. M9 és opcional i demana dues resistències d’1 kΩ; si el kit només en té una, M3 continua essent l’alternativa passiva per a les dues zones.</p>
+</main></body></html>

@@ -1,0 +1,467 @@
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Circuita · Guia docent de consulta</title><style>body{margin:0;font:17px/1.7 system-ui,Segoe UI,sans-serif}main{max-width:1180px;margin:auto;padding:30px}h1{font-size:38px;line-height:1.2}h2{font-size:28px;margin-top:36px}table{border-collapse:collapse;display:block;overflow:auto;width:100%;font-size:14px}th,td{border:1px solid #cededc;padding:10px;min-width:110px;text-align:left;vertical-align:top}th{background:#eef3d3}pre{white-space:pre-wrap;overflow-wrap:anywhere}blockquote{margin:20px 0;padding:14px 20px;background:#e7f4f8;border-left:4px solid #0988a9}@media print{body{font-size:11px}main{padding:0}tr{break-inside:avoid}}</style><style id="circuita-shared-theme">
+/* Circuita · paleta consultada al web del Servei Educatiu de Badalona.
+   Colors globals del web: #8aa500 i #0988A9. Tons clars per als panells. */
+:root{--ink:#253840;--muted:#4c6169;--paper:#fff;--white:#fff;--line:#cbdde0;--green:#086f8a;--orange:#566800;--accent:#086f8a;--lime:#eef3d3;--se-olive:#8aa500;--se-blue:#0988a9}
+html,body{background:#fff}body{color:var(--ink)}a{color:#086f8a}a:hover{color:#526300}button.primary,button[aria-current=step],nav button[aria-current=page]{background:#086f8a;border-color:#086f8a;color:#fff}button.active,.active[aria-pressed=true]{background:#eaf1c7;border-color:#8aa500}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #086f8a;outline-offset:4px}
+.card{background:#e8f4f8;border-color:#c6e0e8;border-top:4px solid #0988a9}.card:nth-of-type(2n){background:#f0f4da;border-color:#dce5b5;border-top-color:#8aa500}.card.dark{background:#14556a;color:#fff;border-color:#14556a}.card.dark p{color:#f1f8fb}.card.dark a{color:#fff}.card .card{background:#fff}.callout,.note{border-color:#8aa500}.callout,.status,.ch-controls,.ch-routine{background:#edf3d5}.callout.alert,.feedback{background:#f2f5df;border-color:#8aa500}.feedback.good,.status.ok{background:#e1edbc}.eyebrow,.step,.ch-place{color:#526300}.muted,.source-caption,.bottom{color:#4c6169}th{background:#e7f1d1}.card textarea,.card select,.card input[type=number]{background:#fff}.route{background:#eef6f9;border-color:#c6e0e8}.piece{background:#eef3d3;border-color:#d6e0ae}.ch-progress li{background:#e7f3f7;color:#294954}.ch-progress li[aria-current]{background:#086f8a;color:#fff}.ch-guide{background:#edf3d5;color:#445600;border-color:#cddaa4}.ch-badges span{background:#fff;color:#36565e}.ch-code,pre{background:#173f50;color:#fff}.ch-parts button{background:#fff}.hero-art.real-kit{background:#eef6f9;border-color:#c6e0e8}.circuit{background:#e7f4f8}.hero-art.real-kit figcaption{color:#4c6169}.text-equivalent{color:#253840}.materials figcaption{background:#f0f4da}.bottom{background:#fff}.high{--ink:#11262e;--muted:#253840;--paper:#fff;--white:#fff;--line:#3d626d;--green:#07566b}
+.circuita-global-nav{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:10px;max-width:1240px;margin:0 auto;padding:18px 28px;background:#fff;border-bottom:1px solid #d8e5e8;box-sizing:border-box}.circuita-global-nav a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:10px 17px;min-height:46px;border:1px solid #bfd8df;border-radius:9px;background:#eaf4f8;color:#075b72;font:700 16px/1.35 system-ui,Segoe UI,sans-serif}.circuita-global-nav a:nth-child(2){background:#f0f4d9;border-color:#d3dea9;color:#465700}.circuita-global-nav a[aria-current=page]{background:#086f8a;border-color:#086f8a;color:#fff}.circuita-global-nav a:hover{box-shadow:0 0 0 2px #8aa500}.circuita-global-nav svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}
+.circuita-home-banner{max-width:1180px;margin:24px auto 0;padding:30px 34px;display:grid;grid-template-columns:1.4fr .65fr;align-items:center;gap:24px;background:#e8f4f8;border:1px solid #c6e0e8;border-top:7px solid #0988a9;border-radius:18px;box-sizing:border-box}.circuita-wordmark{font:850 clamp(70px,11.5vw,145px)/1 system-ui,Segoe UI,sans-serif;color:#0988a9;letter-spacing:-8px}.circuita-wordmark span{color:#8aa500;font-size:.52em;vertical-align:baseline;margin-left:6px}.circuita-home-banner .eyebrow{margin:0 0 15px;color:#486000;font:750 12px/1.4 system-ui,Segoe UI,sans-serif;letter-spacing:1.8px}.circuita-home-image{margin:0;padding:12px;background:#14556a;border-radius:12px;text-align:center;min-width:0}.circuita-home-image img{display:block;width:100%;height:165px;object-fit:contain}.circuita-home-image figcaption{font:12px/1.5 system-ui,Segoe UI,sans-serif;color:#fff;margin-top:7px}.circuita-home-image a{color:#fff}.circuita-home main{padding-top:28px}.circuita-home .cards>.card{background:#e3f2f8;border:1px solid #bfdce6;border-top:5px solid #0988a9}.circuita-home .cards>.card:nth-child(2){background:#eef3cf;border-color:#d4df9e;border-top-color:#8aa500}.circuita-home .cards>.card:nth-child(3){background:#e4f5f5;border-color:#bde0e3;border-top-color:#0988a9}.circuita-home .cards>.card:nth-child(4){background:#f3f6e3;border-color:#d6dfa9;border-top-color:#8aa500}.circuita-home .cards>.card a{font-weight:750}.circuita-home main>p:first-child{color:#526300;font-size:13px;font-weight:750;letter-spacing:1.2px}.circuita-home main>h1{font-size:38px;line-height:1.15;letter-spacing:-1px}
+@media(max-width:750px){.circuita-global-nav{justify-content:flex-start;padding:14px 18px;gap:8px}.circuita-global-nav a{font-size:14px;padding:10px 12px}.circuita-home-banner{margin:18px 18px 0;padding:24px;grid-template-columns:1fr;gap:20px}.circuita-wordmark{letter-spacing:-5px;font-size:clamp(66px,17vw,110px)}.circuita-home-image img{height:135px}.circuita-home main>h1{font-size:30px}.circuita-home main{padding-top:24px}}
+@media print{.circuita-global-nav,.circuita-home-banner{display:none!important}html,body{background:white!important}.card{box-shadow:none}}
+</style></head><body><nav class="circuita-global-nav" aria-label="Navegació principal de Circuita"><a href="Inici.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10L12 3l9 7v11H3z"/><path d="M9 21v-8h6v8"/></svg>Inici</a><a href="Guia-professorat.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h7a3 3 0 0 1 3 3v14a5 5 0 0 0-4-2H3z"/><path d="M21 4h-5a3 3 0 0 0-3 3v14a5 5 0 0 1 4-2h4z"/></svg>Guia docent</a><a href="Circuita.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="7" r="3"/><circle cx="18" cy="8" r="2.5"/><path d="M2 21v-3a6 6 0 0 1 12 0v3M15 14a5 5 0 0 1 7 4v3"/></svg>Alumnat</a></nav><main><h1>Circuita · Guia pràctica per al professorat novell</h1>
+<p>Aquesta guia acompanya l’app d’alumnat. El professorat reprodueix primer la tasca i després prepara com pensar-la en veu alta. No s’assignen activitats a «estils d’aprenentatge»: el DUA ofereix diverses vies d’accés, participació i expressió amb els mateixos objectius.</p>
+<p>La versió HTML inclou cinc laboratoris, animació controlable, preguntes autocorrectives i notes exportables. Aquesta versió reuneix tot el contingut per consultar i imprimir.</p>
+<h2>Abans de començar</h2>
+<p>Treballa primer en simulació. Per al muntatge real confirma inventari, manual, alimentació i procediment. Desconnecta abans de modificar. No treballis amb xarxa domèstica ni provoquis curtcircuits. Davant d’una anomalia, atura i desconnecta. No es fixen pins, connexions ni valors de mòduls del kit a partir d’una fotografia.</p>
+<h2>Bases conceptuals</h2>
+<h3>Circuit tancat</h3>
+<p><strong>Exemple real:</strong> Una llanterna només pot funcionar si les connexions formen el camí previst.</p>
+<p><strong>Representació:</strong> Visualitza un recorregut que torna al punt de partida. Segueix-lo amb un dit o una descripció oral.</p>
+<p><strong>Pràctica:</strong> Obre el comandament del model; després obre el retorn. Compara les dues causes d’apagat.</p>
+<p><strong>Límit o precisió:</strong> Un camí tancat no garanteix per si sol funcionament: font, polaritat i components també han de ser adequats.</p>
+<h3>Font i energia</h3>
+<p><strong>Exemple real:</strong> Les piles d’un comandament emmagatzemen energia química que es pot transformar.</p>
+<p><strong>Representació:</strong> Representa la font amb + i − i etiqueta els receptors.</p>
+<p><strong>Pràctica:</strong> Identifica la font i explica què aporta sense dir que «fabrica electrons».</p>
+<p><strong>Límit o precisió:</strong> El circuit no necessita que la font creï els electrons que ja hi ha als conductors.</p>
+<h3>Tensió i corrent</h3>
+<p><strong>Exemple real:</strong> Una font i un receptor tenen valors i límits que cal respectar.</p>
+<p><strong>Representació:</strong> Tensió V: diferència de potencial entre dos punts, en volts. Corrent I: càrrega que travessa una secció per unitat de temps, en amperes.</p>
+<p><strong>Pràctica:</strong> Per a un resistor ideal, 3 V / 1.000 Ω = 0,003 A = 3 mA. Escriu les unitats.</p>
+<p><strong>Límit o precisió:</strong> La tensió es defineix entre punts; el corrent, en una branca. No són dues paraules per a la mateixa magnitud.</p>
+<h3>Una analogia i el seu límit</h3>
+<p><strong>Exemple real:</strong> Un circuit d’aigua recirculant pot ajudar a imaginar pressió, cabal i restricció.</p>
+<p><strong>Representació:</strong> Dibuixa bomba → canonada → turbina → retorn. Relaciona-ho amb font, conductors i receptor.</p>
+<p><strong>Pràctica:</strong> Explica on l’analogia ajuda a recordar el retorn i després indica un límit.</p>
+<p><strong>Límit o precisió:</strong> L’aigua no és electricitat: l’analogia no descriu la propagació dels camps ni tots els components electrònics.</p>
+<h3>Resistència i llei d’Ohm</h3>
+<p><strong>Exemple real:</strong> Una resistència limita la relació entre tensió i corrent en un model adequat.</p>
+<p><strong>Representació:</strong> R en ohms, Ω. En un resistor ideal: V = I·R.</p>
+<p><strong>Pràctica:</strong> Amb V fixa, compara R = 1.000 Ω i R = 2.000 Ω. El corrent passa de 3 mA a 1,5 mA si V = 3 V.</p>
+<p><strong>Límit o precisió:</strong> No apliquis aquesta fórmula directament a un LED ni dedueixis les connexions d’un mòdul Cirkids. Pot incorporar elements interns.</p>
+<h3>LED i polaritat</h3>
+<p><strong>Exemple real:</strong> Molts indicadors d’aparells són LEDs i necessiten condicions elèctriques adequades.</p>
+<p><strong>Representació:</strong> Observa noms, símbols i marques del mòdul. No dedueixis polaritat només pel color d’un cable.</p>
+<p><strong>Pràctica:</strong> En el kit, identifica les marques amb el manual abans de preparar el muntatge desconnectat.</p>
+<p><strong>Límit o precisió:</strong> No connectis un LED solt directament a qualsevol pila. El tractament d’un mòdul educatiu depèn del seu disseny i documentació.</p>
+<h3>Interruptor i polsador</h3>
+<p><strong>Exemple real:</strong> Un interruptor de llum acostuma a mantenir la posició; un timbre acostuma a respondre mentre el premem.</p>
+<p><strong>Representació:</strong> Compara dos fotogrames: actuant / després de deixar.</p>
+<p><strong>Pràctica:</strong> Fes la prova prémer–deixar i descriu si l’estat es conserva.</p>
+<p><strong>Límit o precisió:</strong> El polsador sol no guarda el torn; cal una altra funció per tenir memòria.</p>
+<h3>Sèrie i paral·lel</h3>
+<p><strong>Exemple real:</strong> En una maqueta amb dues zones, pot interessar controlar una llum sense afectar l’altra.</p>
+<p><strong>Representació:</strong> Segueix les branques; la posició física sobre la taula no defineix el tipus de circuit.</p>
+<p><strong>Pràctica:</strong> Obre una branca i després l’altra. Fes també el cas de sèrie per comparar.</p>
+<p><strong>Límit o precisió:</strong> La brillantor real depèn de components i alimentació. No concloguis que sempre és igual o que un receptor consumeix corrent.</p>
+<h3>Entrada, procés i sortida</h3>
+<p><strong>Exemple real:</strong> Un llum automàtic pot usar una lectura ambiental, una regla i un actuador.</p>
+<p><strong>Representació:</strong> Sensor → comparació/decisió → llum. Afegeix noms i una frase al diagrama.</p>
+<p><strong>Pràctica:</strong> Dona tres entrades simbòliques i escriu la sortida esperada abans de moure el control.</p>
+<p><strong>Límit o precisió:</strong> No tots els sensors proporcionen el mateix tipus de lectura; cal documentació i, si escau, calibratge.</p>
+<h3>Llindar, AND i casos límit</h3>
+<p><strong>Exemple real:</strong> Un dispositiu només respon si està habilitat i si es compleix una condició.</p>
+<p><strong>Representació:</strong> Regla: habilitat AND (L &lt; 30). Mostra-la també en una taula.</p>
+<p><strong>Pràctica:</strong> Prova 29, 30 i 31 amb habilitat cert; prova 0 amb habilitat fals.</p>
+<p><strong>Límit o precisió:</strong> L’escala 0–100 del model no són lux. «Menor que» no inclou la igualtat.</p>
+<h3>Seqüència i prioritat</h3>
+<p><strong>Exemple real:</strong> Un avís intermitent necessita temps i una manera definida d’aturar-lo.</p>
+<p><strong>Representació:</strong> Dibuixa una línia temporal amb encès, apagat i un senyal d’aturada que interromp el procés.</p>
+<p><strong>Pràctica:</strong> Activa l’aturada mentre s’executa, no només abans de començar.</p>
+<p><strong>Límit o precisió:</strong> Una animació educativa no valida temps de resposta físic ni converteix el muntatge en un sistema de seguretat.</p>
+<h3>Histèresi i estat</h3>
+<p><strong>Exemple real:</strong> Un control amb dos llindars pot evitar commutacions quan una lectura fluctua.</p>
+<p><strong>Representació:</strong> Encén per sota de 30, apaga per sobre de 40 i conserva la resta. Defineix l’estat inicial.</p>
+<p><strong>Pràctica:</strong> Prova 20 → 35 → 45 → 35. Espera encès → encès → apagat → apagat.</p>
+<p><strong>Límit o precisió:</strong> A 35 poden existir dos estats segons la història. Histèresi i retard temporal no són el mateix.</p>
+<h2>Cinc recorreguts de modelatge</h2>
+<h3>1r–2n de primària · Una llum per al racó de lectura</h3>
+<p><strong>Context:</strong> Una aula de Badalona. A la maqueta del racó de lectura volem decidir quan hi ha llum. Construïm un model petit per entendre el camí elèctric; no modifiquem la instal·lació de l’escola.</p>
+<p><strong>Fita:</strong> Identificar la font, la llum i l’interruptor, i explicar què canvia quan el camí queda obert.</p>
+<p><strong>Material:</strong> Font educativa autoritzada, interruptor, mòdul LED adequat i connexions compatibles amb el vostre kit. El simulador representa una llum genèrica.</p>
+<p><strong>Concepte:</strong> La font aporta energia; l’interruptor obre o tanca el camí. La llum transforma energia elèctrica en llum i calor. Un camí complet és necessari, però calen també components adequats i ben connectats.</p>
+<p><strong>Predicció:</strong> Amb la font activada, el retorn complet i l’interruptor obert, què passarà? Per què?</p>
+<p><strong>Resultat esperat:</strong> La llum queda apagada perquè el camí està interromput a l’interruptor.</p>
+<p><strong>Modelatge en veu alta:</strong> «No començaré tocant totes les peces. Primer segueixo el camí amb el dit: surto de la font, arribo a l’interruptor, passo per la llum i torno a la font. Aquí el camí queda tallat. Predic que la llum estarà apagada. Tanco només l’interruptor i comprovo la predicció.»</p>
+<p><strong>Pràctica guiada:</strong></p>
+<ol>
+<li>Identifica font, interruptor i llum a la imatge del kit. Digues la funció de cada peça.</li>
+<li>Al laboratori virtual deixa la font activada, el retorn complet i l’interruptor obert. Escriu o explica la predicció.</li>
+<li>Tanca només l’interruptor. Compara l’estat de la llum amb la predicció.</li>
+<li>Obre només el retorn: la llum s’apaga tot i tenir l’interruptor tancat. Després restaura el retorn.</li>
+<li>Trasllada la idea al maletí: amb l’alimentació desconnectada prepara el muntatge segons el manual, demana la revisió acordada i prova encès/apagat.</li>
+</ol>
+<p><strong>Proves:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cas</th>
+<th>Resultat esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Font activa + interruptor obert + retorn complet</td>
+<td>Apagat: camí interromput.</td>
+</tr>
+<tr>
+<td>Font activa + interruptor tancat + retorn complet</td>
+<td>Encès en el model.</td>
+</tr>
+<tr>
+<td>Font activa + interruptor tancat + retorn tallat</td>
+<td>Apagat: falta retorn.</td>
+</tr>
+</tbody></table>
+<p><strong>Error a explorar:</strong> «La llum està apagada; segur que la pila s’ha acabat.» No és l’única hipòtesi: comprovem primer comandament i continuïtat. Amb el maletí desconnectat revisem també polaritat i connexions segons el manual.</p>
+<p><strong>Transferència:</strong> Sense copiar el muntatge, dibuixa o munta una llum per a una maqueta d’un aparador del teu barri. Mostra com encendre-la i apagar-la sense desmuntar-la.</p>
+<p><strong>Millora:</strong> Afegeix un rètol amb text i símbol d’encesa: el color sol no ha de ser l’única informació.</p>
+<p><strong>Rutina de pensament: Veig – penso – em pregunto.</strong></p>
+<ul>
+<li>Veig: quines peces i quins camins observo?</li>
+<li>Penso: què crec que passarà quan tanqui l’interruptor?</li>
+<li>Em pregunto: com comprovaré si falta algun camí?</li>
+</ul>
+<p><strong>DUA:</strong> Modela amb una peça real, un esquema amb noms i una explicació oral breu. Permet assenyalar o descriure el camí, sense exigir lectura ni escriptura llarga. El suport adult per manipular no ha de donar la resposta conceptual.</p>
+<p><strong>Com acostar-ho a l’alumnat:</strong> «Mostra’m on s’ha tallat el camí.» La criatura pot assenyalar, dibuixar o explicar oralment. Una sola frase o gest comentat pot aportar evidència.</p>
+<p><strong>Indicadors de preparació docent:</strong></p>
+<ul>
+<li>Puc indicar la font sense confondre-la amb la llum.</li>
+<li>Puc predir encès/apagat en dos estats.</li>
+<li>Puc mostrar el tall que explica un estat apagat.</li>
+</ul>
+<p><strong>Instrument complementari:</strong> Conversa de demostració amb tres targetes: «Ho puc mostrar», «Ho estic provant», «Necessito que ho tornem a mirar». No s’avalua la llargada de l’explicació.</p>
+<p><strong>Tiquet de sortida:</strong> Abans pensava que… Ara, després d’obrir i tancar el camí, penso que… Ho puc mostrar fent…</p>
+<p><strong>Comprovació:</strong> En aquest model, què passa si tanques l’interruptor però el retorn continua tallat?</p>
+<ol>
+<li>La llum s’encén igualment</li>
+<li>La llum continua apagada</li>
+<li>L’interruptor es converteix en font</li>
+</ol>
+<p>Clau: 2. El camí ha de ser complet també en el retorn. Tancar només l’interruptor no resol aquest tall.</p>
+<p><a href="Circuita.html#repte=p1-light">Obre el repte corresponent de l’alumnat</a>.</p>
+<h3>3r–4t de primària · Un avís visual per demanar torn</h3>
+<p><strong>Context:</strong> Club de lectura d’una escola de Badalona. Al club de lectura volem demanar torn amb un avís visual sense interrompre la persona que parla. El disseny ha d’evitar dependre només d’un so.</p>
+<p><strong>Fita:</strong> Distingir un polsador d’un interruptor i relacionar entrada, resposta i retorn a l’estat inicial.</p>
+<p><strong>Material:</strong> Font educativa, polsador i mòdul LED compatibles. El brunzidor és opcional i no necessari per assolir l’objectiu.</p>
+<p><strong>Concepte:</strong> Un polsador momentani canvia d’estat mentre es prem i torna al repòs quan es deixa. Un interruptor manté la posició seleccionada. El polsador no guarda per si sol una petició quan el deixem anar.</p>
+<p><strong>Predicció:</strong> Si premem i després deixem el polsador, la llum continuarà encesa?</p>
+<p><strong>Resultat esperat:</strong> En aquest circuit sense memòria s’encén mentre premem i s’apaga quan deixem el polsador.</p>
+<p><strong>Modelatge en veu alta:</strong> «Vull saber si aquest comandament recorda la petició. Provo prémer i deixar, no només prémer. Observo que la llum s’apaga en deixar-lo. El que he construït respon mentre hi ha pressió; encara no és un sistema que guardi el torn.»</p>
+<p><strong>Pràctica guiada:</strong></p>
+<ol>
+<li>Compara l’interruptor i el polsador a la imatge dels mòduls. Identifica com actua cadascun.</li>
+<li>Prediu què passarà en deixar el polsador en un circuit sense memòria.</li>
+<li>Al model, activa «polsador premut». Observa la llum i l’etiqueta textual.</li>
+<li>Desactiva «polsador premut». Explica què es manté i què canvia.</li>
+<li>Amb el material real desconnectat prepara el muntatge validat. Prova tres vegades prémer/deixar i registra els resultats.</li>
+</ol>
+<p><strong>Proves:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cas</th>
+<th>Resultat esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Polsador en repòs, circuit complet</td>
+<td>Llum apagada.</td>
+</tr>
+<tr>
+<td>Polsador premut, circuit complet</td>
+<td>Llum encesa.</td>
+</tr>
+<tr>
+<td>Deixar el polsador després d’haver-lo premut</td>
+<td>Llum apagada: no hi ha memòria.</td>
+</tr>
+</tbody></table>
+<p><strong>Error a explorar:</strong> «Polsador i interruptor fan exactament el mateix.» Tots dos poden controlar un camí, però el seu estat de repòs i la manera de conservar la posició són diferents. Fes la prova de deixar el comandament.</p>
+<p><strong>Transferència:</strong> Dissenya un avís visual per a la persona que reparteix material a classe. Explica si necessites una acció momentània o un estat que quedi mantingut.</p>
+<p><strong>Millora:</strong> Si cal guardar una petició, identifica que cal memòria o un altre comandament i dissenya també una acció per esborrar-la. No atribueixis aquesta funció al polsador sol.</p>
+<p><strong>Rutina de pensament: Predic – provo – explico.</strong></p>
+<ul>
+<li>Predic: quan es mantindrà encesa la llum?</li>
+<li>Provo: què passa en prémer i en deixar?</li>
+<li>Explico: quina diferència he trobat entre polsador i interruptor?</li>
+</ul>
+<p><strong>DUA:</strong> Combina el comandament real amb dos fotogrames «premut / repòs» i la descripció textual. Ofereix botons commutables amb teclat al simulador; no exigeix mantenir premuda una tecla ni fer gestos precisos.</p>
+<p><strong>Com acostar-ho a l’alumnat:</strong> «He premut…, he deixat… i he observat…». L’alumnat pot respondre amb una seqüència de dibuixos o una demostració comentada.</p>
+<p><strong>Indicadors de preparació docent:</strong></p>
+<ul>
+<li>Puc distingir entre prémer i deixar.</li>
+<li>Puc explicar per què aquest circuit no guarda la petició.</li>
+<li>Puc triar un comandament adequat al problema.</li>
+</ul>
+<p><strong>Instrument complementari:</strong> Llista de prova abans/durant/després de prémer i coavaluació «He vist que…; et proposo provar…».</p>
+<p><strong>Tiquet de sortida:</strong> Quina observació t’ha fet canviar o confirmar la idea que tenies del polsador? Quin problema nou voldries resoldre?</p>
+<p><strong>Comprovació:</strong> Quina prova diferencia millor un polsador momentani d’un interruptor mantingut?</p>
+<ol>
+<li>Mirar només el color</li>
+<li>Comprovar què passa quan es deixa d’actuar sobre el comandament</li>
+<li>Canviar la llum de lloc</li>
+</ol>
+<p>Clau: 2. La prova de deixar el comandament revela si conserva la posició o torna al repòs.</p>
+<p><a href="Circuita.html#repte=p2-button">Obre el repte corresponent de l’alumnat</a>.</p>
+<h3>5è–6è de primària · Dues zones d’un passeig en maqueta</h3>
+<p><strong>Context:</strong> Passeig marítim de Badalona. A la maqueta del passeig marítim volem il·luminar dues zones de manera independent. Si desconnectem una zona per revisar-la, l’altra ha de continuar funcionant en el model.</p>
+<p><strong>Fita:</strong> Comparar sèrie i paral·lel per connectivitat, predir què passa quan s’obre un camí i justificar la tria.</p>
+<p><strong>Material:</strong> Font educativa adequada, dos mòduls llum, comandaments i connexions segons el manual. La construcció física depèn de l’equipament; la maqueta no es connecta a cap instal·lació urbana.</p>
+<p><strong>Concepte:</strong> En sèrie, els receptors comparteixen el camí; obrir-lo afecta tots dos. En paral·lel, cada branca pot mantenir un camí propi fins a la font. Això no implica que la brillantor sigui sempre igual: depèn dels components i de l’alimentació.</p>
+<p><strong>Predicció:</strong> Si obrim la branca A d’un muntatge en paral·lel, què passarà a B si conserva un camí complet i una font adequada?</p>
+<p><strong>Resultat esperat:</strong> B pot continuar encesa perquè manté un camí propi. En el model de sèrie, obrir el camí d’A interromp també B.</p>
+<p><strong>Modelatge en veu alta:</strong> «Totes dues llums enceses no em demostren que siguin independents. Necessito una prova que diferenciï les dues organitzacions. Obro només A i observo B; després faig la prova inversa.»</p>
+<p><strong>Pràctica guiada:</strong></p>
+<ol>
+<li>Dibuixa dues zones de la maqueta i el requisit «independents».</li>
+<li>Tria «sèrie» al model i tanca tots dos comandaments. Obre només A i observa totes dues llums.</li>
+<li>Tria «paral·lel» i repeteix exactament la mateixa prova.</li>
+<li>Obre B i mantén A tancada. Registra el resultat invers.</li>
+<li>Justifica la topologia escollida amb dues proves. Construeix físicament només segons una pauta compatible amb el kit.</li>
+</ol>
+<p><strong>Proves:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cas</th>
+<th>Resultat esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Paral·lel: A oberta, B tancada</td>
+<td>A apagada; B encesa.</td>
+</tr>
+<tr>
+<td>Paral·lel: A tancada, B oberta</td>
+<td>A encesa; B apagada.</td>
+</tr>
+<tr>
+<td>Sèrie: un dels camins obert</td>
+<td>Totes dues apagades.</td>
+</tr>
+</tbody></table>
+<p><strong>Error a explorar:</strong> «Sèrie vol dir una peça al costat de l’altra.» La disposició sobre la taula no determina la topologia. Cal seguir les connexions. També evitem dir que una llum «es menja el corrent».</p>
+<p><strong>Transferència:</strong> Afegeix a la maqueta una zona de lectura i una zona de pas. Dissenya com controlar-les i fes una prova que mostri independència.</p>
+<p><strong>Millora:</strong> Proposa un criteri d’ús responsable: apagar una zona quan no cal. Compara dues solucions i explica amb dades d’estats quina compleix el requisit.</p>
+<p><strong>Rutina de pensament: Compara – contrasta – conclou.</strong></p>
+<ul>
+<li>Compara: què tenen en comú les dues organitzacions?</li>
+<li>Contrasta: quina prova fa aparèixer la diferència?</li>
+<li>Conclou: quina triaries per a zones independents i per què?</li>
+</ul>
+<p><strong>DUA:</strong> Ofereix fils físics, esquema amb etiquetes A/B, taula d’estats i explicació verbal. La independència s’ha de poder comprovar sense distingir colors. Accepta una taula comentada o una demostració com a evidència.</p>
+<p><strong>Com acostar-ho a l’alumnat:</strong> «He obert A i B ha…; això indica que…». Demana proves inverses, no només la definició de paral·lel.</p>
+<p><strong>Indicadors de preparació docent:</strong></p>
+<ul>
+<li>Puc seguir un camí complet de cada branca.</li>
+<li>Puc mostrar dues proves que diferencien sèrie i paral·lel.</li>
+<li>Puc justificar la topologia a partir de la necessitat.</li>
+</ul>
+<p><strong>Instrument complementari:</strong> Taula de proves amb predicció/resultat/conclusió i coavaluació d’una justificació basada en dos casos.</p>
+<p><strong>Tiquet de sortida:</strong> Quina prova ha estat decisiva? Què no puc afirmar sobre la brillantor real a partir d’aquest model?</p>
+<p><strong>Comprovació:</strong> Amb dues llums enceses, ja pots assegurar que són independents?</p>
+<ol>
+<li>Sí, perquè estan enceses</li>
+<li>No: cal obrir cada branca i observar l’altra</li>
+<li>Sí, si tenen colors diferents</li>
+</ol>
+<p>Clau: 2. L’estat final encès pot aparèixer en diverses topologies. Les proves d’obertura separada aporten evidència d’independència.</p>
+<p><a href="Circuita.html#repte=p3-parallel">Obre el repte corresponent de l’alumnat</a>.</p>
+<h3>1r d’ESO · Una llum que respon a l’entorn</h3>
+<p><strong>Context:</strong> Maqueta inspirada en Can Solei i Ca l’Arnús. Volem un model de senyal lluminós que només s’activi quan el sistema estigui habilitat i hi hagi poca llum. El llindar del model és simbòlic, no una mesura calibrada del parc.</p>
+<p><strong>Fita:</strong> Representar entrada–decisió–sortida, interpretar «menor que» i validar una condició AND amb casos límit.</p>
+<p><strong>Material:</strong> Simulador; per traslladar-ho al kit cal un sensor de llum, controlador i actuador compatibles, amb documentació de lectura i connexió. No tots els sensors són intercanviables.</p>
+<p><strong>Concepte:</strong> El sensor proporciona informació. El programa compara l’entrada amb un llindar. L’actuador respon a la decisió. En el model: sortida = habilitat AND (L &lt; 30). El sensor no crea per si sol tota aquesta lògica.</p>
+<p><strong>Predicció:</strong> Amb L = 30 i el sistema habilitat, s’encendrà? I amb L = 0 però el sistema deshabilitat?</p>
+<p><strong>Resultat esperat:</strong> En tots dos casos queda apagada: la igualtat no compleix «menor que» i la deshabilitació impedeix l’encesa encara que sigui fosc.</p>
+<p><strong>Modelatge en veu alta:</strong> «No provaré només una situació de foscor. Llegeixo la regla literalment, trio 29, 30 i 31, i també un cas amb habilitat fals. Si canvio totes les entrades alhora, perdré informació sobre la causa.»</p>
+<p><strong>Pràctica guiada:</strong></p>
+<ol>
+<li>Identifica entrada (llum), condició d’habilitació i sortida. Escriu la regla en llenguatge quotidià.</li>
+<li>Prediu la resposta per a L = 29, 30 i 31 amb habilitat cert.</li>
+<li>Al model activa habilitació, mou L i registra els tres resultats.</li>
+<li>Deshabilita amb L = 0. Comprova que la sortida queda apagada.</li>
+<li>Escriu el pseudocodi si/altrament i contrasta la seva implementació amb els mateixos casos.</li>
+</ol>
+<p><strong>Proves:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cas</th>
+<th>Resultat esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Habilitat cert; L = 29</td>
+<td>Encès.</td>
+</tr>
+<tr>
+<td>Habilitat cert; L = 30 i 31</td>
+<td>Apagat en tots dos casos.</td>
+</tr>
+<tr>
+<td>Habilitat fals; L = 0</td>
+<td>Apagat: l’habilitació té efecte.</td>
+</tr>
+</tbody></table>
+<p><strong>Error a explorar:</strong> «L = 30 és pràcticament foscor, així que ha d’encendre.» El programa executa un operador concret; «&lt;» i «≤» no són equivalents. També és un error anomenar lux una escala sense calibratge.</p>
+<p><strong>Transferència:</strong> Dissenya una regla equivalent per a una maqueta d’un aparador de barri amb un interruptor general. Tria un altre llindar i torna a generar els casos de límit.</p>
+<p><strong>Millora:</strong> Afegeix un registre d’estats i justifica un llindar propi. Si les mesures fluctuen, anticipa per què podria caldre una banda d’histèresi.</p>
+<p><strong>Rutina de pensament: Afirmació – evidència – pregunta.</strong></p>
+<ul>
+<li>Afirmació: quan ha de respondre el sistema?</li>
+<li>Evidència: quins casos confirmen o refuten la regla?</li>
+<li>Pregunta: quina limitació del model falta comprovar amb un sensor real?</li>
+</ul>
+<p><strong>DUA:</strong> Mostra la mateixa regla com a frase, diagrama de flux, pseudocodi i taula. Permet resposta oral amb una taula assenyalada. Defineix el símbol &lt; explícitament i mantén visibles les dues condicions.</p>
+<p><strong>Com acostar-ho a l’alumnat:</strong> «El cas 30 refuta/confirma… perquè l’operador…». Avalua la interpretació de les regles, no la memòria del nom del bloc.</p>
+<p><strong>Indicadors de preparació docent:</strong></p>
+<ul>
+<li>Puc distingir sensor, decisió i actuador.</li>
+<li>Puc provar la igualtat i els valors adjacents.</li>
+<li>Puc validar l’habilitació amb un contraexemple.</li>
+</ul>
+<p><strong>Instrument complementari:</strong> Informe breu de validació amb casos normals, límit i deshabilitació; conversa docent sobre un contraexemple.</p>
+<p><strong>Tiquet de sortida:</strong> Quin cas m’ha obligat a precisar la regla? Quina dada real necessitaria abans de traslladar el model al parc?</p>
+<p><strong>Comprovació:</strong> Quin conjunt de proves és més informatiu per validar L &lt; 30 i habilitació?</p>
+<ol>
+<li>Només L = 10 amb habilitació</li>
+<li>L = 29, 30 i 31 habilitat; L = 0 deshabilitat</li>
+<li>Tres vegades L = 0 habilitat</li>
+</ol>
+<p>Clau: 2. Els valors al voltant del límit comproven l’operador, i la prova deshabilitada comprova la segona condició.</p>
+<p><a href="Circuita.html#repte=e1-sensor">Obre el repte corresponent de l’alumnat</a>.</p>
+<h3>2n d’ESO · Un avís amb aturada prioritària</h3>
+<p><strong>Context:</strong> Maqueta del litoral i del Pont del Petroli. Construïm una maqueta educativa d’un avís intermitent amb aturada prioritària. No és un sistema real de seguretat, ni descriu cap instal·lació o estat d’accés actual del Pont del Petroli.</p>
+<p><strong>Fita:</strong> Distingir seqüència temporal i condició, comprovar una prioritat durant l’execució i explicar com l’estat anterior intervé en una histèresi.</p>
+<p><strong>Material:</strong> Simulador; eventualment controlador, entrada d’aturada i LED compatibles. La parada del model és una lògica educativa i no una funció de seguretat certificada.</p>
+<p><strong>Concepte:</strong> Una seqüència canvia les sortides amb el temps. La prioritat d’aturada s’ha de revisar mentre la seqüència s’executa. Una histèresi conserva l’estat entre dos llindars; no és simplement «esperar una mica».</p>
+<p><strong>Predicció:</strong> Si s’activa l’aturada mentre el LED està encès, què ha de passar? Si L puja de 20 a 35 amb histèresi 30/40, s’apaga?</p>
+<p><strong>Resultat esperat:</strong> L’aturada ha de forçar l’apagat i impedir la seqüència. A 35, amb estat previ encès i sense aturada, l’histèresi manté l’encesa.</p>
+<p><strong>Modelatge en veu alta:</strong> «Veure parpellejar el LED no demostra que l’aturada tingui prioritat. L’activo en plena execució, comprovo que la sortida es força a zero i verifico que no torna a activar-se mentre mantinc l’ordre. Després preciso què passa quan la retiro.»</p>
+<p><strong>Pràctica guiada:</strong></p>
+<ol>
+<li>Representa l’estat aturat i l’estat en marxa, amb la regla de prioritat.</li>
+<li>Inicia l’animació, pausa i avança un pas. Compara els estats de la sortida.</li>
+<li>Reprèn i activa aturada mentre la seqüència funciona. Comprova l’apagat immediat al model.</li>
+<li>Mantén aturada activa i avança més passos: la sortida ha de continuar apagada.</li>
+<li>Retira aturada. En aquest model, la seqüència queda pausada fins a prémer Reprodueix. Després prova la histèresi amb la seqüència d’entrades 20 → 35 → 45 → 35.</li>
+</ol>
+<p><strong>Proves:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cas</th>
+<th>Resultat esperat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>En marxa, sense aturada</td>
+<td>Alternança encès/apagat controlada.</td>
+</tr>
+<tr>
+<td>Aturada activa en qualsevol pas</td>
+<td>Sortida apagada i execució pausada.</td>
+</tr>
+<tr>
+<td>Histèresi: 20 → 35 → 45 → 35, estat inicial apagat</td>
+<td>Encès → encès → apagat → apagat.</td>
+</tr>
+</tbody></table>
+<p><strong>Error a explorar:</strong> «Una espera llarga al programa és igual que una aturada prioritària.» Una espera bloquejant pot retardar la lectura d’entrades. Cal escollir una estratègia que revisi la prioritat durant el procés; l’animació abstracta no prova el temps de resposta del maquinari.</p>
+<p><strong>Transferència:</strong> Dissenya un avís de maqueta per a una activitat escolar al passeig: seqüència clara, cancel·lació i canals accessibles. Defineix els casos de prova abans d’implementar.</p>
+<p><strong>Millora:</strong> Redueix commutacions d’una entrada fluctuant amb dos llindars i memòria d’estat. Explica les condicions exactes de canvi i la política de reinici.</p>
+<p><strong>Rutina de pensament: Què passa si…? – Prova de contraexemples.</strong></p>
+<ul>
+<li>Què passa si arriba l’aturada durant una espera?</li>
+<li>Quina prova faria fallar una solució que només comprova l’aturada al principi?</li>
+<li>Què puc concloure i què encara no he validat físicament?</li>
+</ul>
+<p><strong>DUA:</strong> Combina línia temporal, diagrama d’estats, taula i execució pas a pas. El moviment es pot aturar; l’estat sempre apareix en text. Les proves no exigeixen rapidesa motriu ni resposta cronometrada.</p>
+<p><strong>Com acostar-ho a l’alumnat:</strong> «Aquest cas mostra que la prioritat…; el límit de la nostra prova és…». Demana una traça i un contraexemple, no només un vídeo del resultat.</p>
+<p><strong>Indicadors de preparació docent:</strong></p>
+<ul>
+<li>Puc activar una aturada en qualsevol fase i observar-ne l’efecte.</li>
+<li>Puc definir com es reprèn el model.</li>
+<li>Puc explicar per què L = 35 pot correspondre a dos estats en histèresi.</li>
+</ul>
+<p><strong>Instrument complementari:</strong> Traça temporal amb proves de prioritat i registre de depuració hipòtesi/prova/resultat/canvi; coavaluació de la cobertura de casos.</p>
+<p><strong>Tiquet de sortida:</strong> Quina prova ha revelat una fallada o un límit? Què canviaria al programa i com verificaria la millora?</p>
+<p><strong>Comprovació:</strong> Amb histèresi: encendre si L &lt; 30, apagar si L &gt; 40, conservar en la resta. L = 35 vol dir…</p>
+<ol>
+<li>Sempre encès</li>
+<li>Sempre apagat</li>
+<li>Depèn de l’estat anterior</li>
+</ol>
+<p>Clau: 3. Entre els dos llindars no hi ha ordre de canvi. El model manté l’estat anterior; per això cal descriure també l’estat inicial.</p>
+<p><a href="Circuita.html#repte=e2-sequence">Obre el repte corresponent de l’alumnat</a>.</p>
+<h2>Rúbrica del modelatge docent</h2>
+<table>
+<thead>
+<tr>
+<th>Criteri</th>
+<th>1 · Inicial</th>
+<th>2 · En procés</th>
+<th>3 · Preparat</th>
+<th>4 · Transferència</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Comprensió</td>
+<td>Confón funcions</td>
+<td>Explica parcialment amb ajuda conceptual</td>
+<td>Explica causa i resultat per a l’edat</td>
+<td>Justifica un cas nou i un límit</td>
+</tr>
+<tr>
+<td>Proves</td>
+<td>Fa canvis sense control</td>
+<td>Segueix proves suggerides</td>
+<td>Contrasta predicció i casos incloent un error</td>
+<td>Proposa contraexemples</td>
+</tr>
+<tr>
+<td>Modelatge i DUA</td>
+<td>Mostra només resultat</td>
+<td>Narra passos però falten opcions</td>
+<td>Explicita decisió, prova i revisió amb vies equivalents</td>
+<td>Ajusta barreres i retira ajuda conceptual</td>
+</tr>
+<tr>
+<td>Preparació segura</td>
+<td>No ha contrastat material</td>
+<td>Identifica pautes incompletes</td>
+<td>Contrasta manual i revisa abans d’alimentar</td>
+<td>Anticipa anomalies i alternatives</td>
+</tr>
+<tr>
+<td>Avaluació</td>
+<td>Confón resultat amb comprensió</td>
+<td>Evidència poc concloent</td>
+<td>Preveu evidència individual i reflexió</td>
+<td>Usa evidència per ajustar l’ensenyament</td>
+</tr>
+</tbody></table>
+<p>No es calcula una mitjana automàtica. Els suports d’accés no redueixen el nivell. Una preparació insegura no es compensa amb altres criteris.</p>
+<h2>Seqüència de classe</h2>
+<ol>
+<li>Fita en una frase i context proper.</li>
+<li>Predicció privada.</li>
+<li>Modelatge docent d’una decisió i una prova.</li>
+<li>Pràctica guiada amb alternatives d’accés.</li>
+<li>Transferència amb menys ajuda conceptual.</li>
+<li>Evidència individual amb format flexible.</li>
+<li>Tiquet de sortida i ajust de la sessió següent.</li>
+</ol>
+<h2>Fonts i abast</h2>
+<ul>
+<li><a href="https://academiadeinventores.com/cirkids/">Cirkids · Academia de Inventores</a>. Kit i imatges.</li>
+<li><a href="https://udlguidelines.cast.org/">CAST · Pautes DUA 3.0</a>. Marc d’accessibilitat i disseny de l’aprenentatge.</li>
+<li><a href="https://www.badalona.cat/ca/serveis-ajuntament/turisme/que-fer-i-que-veure/els-imprescindibles/el-parc-de-can-solei-de-ca-larnus">Ajuntament de Badalona · Can Solei i Ca l’Arnús</a> i <a href="https://www.badalona.cat/ca/serveis-ajuntament/turisme/que-fer-i-que-veure/els-imprescindibles/el-pont-del-petroli">Pont del Petroli</a>. Referents de context.</li>
+</ul>
+<p>Textos i simulacions originals. Activitats de maqueta fictícies, sense relació amb instal·lacions de servei reals. No s’han verificat les làmines descarregables ni el maletí físic. El model és qualitatiu, no calcula el comportament elèctric real. L’animació no valida la seguretat ni el temps de resposta d’un sistema físic.</p>
+<h2>Pas al muntatge físic</h2>
+<p>La nova versió incorpora <code>Dossier-muntatge.html</code> i <code>Dossier-muntatge.md</code>, amb deu muntatges de referència vinculats als quinze reptes, connexions numerades, programa corresponent, calibratge i registre de prova docent. S’han consultat les làmines originals Cirkids (la primera usa 100 Ω en sèrie amb el LED) i l’activitat tècnica d’Academia de Inventores dins de STEAMbrace (PDF, pàgines 187–190). Les adaptacions, el valor de treball 10 kΩ del sensor, els programes i el rearme són propostes pròpies. No hi ha prova física del vostre material.</p>
+<p>La carpeta <code>programes/</code> conté set sketches independents amb guions equivalents al dossier. Els fitxers de sensor s’entreguen amb calibratge pendent i LED apagat; el calibrador genera una versió amb les dades mesurades. No s’entreguen fitxers nadius Hello, Blocks! perquè no se n’ha verificat un format d’intercanvi: els guions es reconstrueixen a l’editor, o s’usa la via Arduino IDE amb els INO.</p>
+<p><code>Organitzacio-aula.md</code> completa els cinc itineraris amb vuit sessions orientatives cadascun, quatre rols, plantilles de proves, calibratge, traça i histèresi, i rúbriques físiques per edat.</p>
+</main></body></html>
