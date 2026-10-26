@@ -469,3 +469,12 @@ En aquesta ampliació s’han localitzat les làmines originals de Cirkids i mat
 **Documentat** vol dir que una font mostra o descriu una configuració. **Contrastat amb el maletí** vol dir que el docent ha comprovat que correspon a les peces reals. **Provat físicament** vol dir que s’ha executat amb aquell material i se n’han observat els casos indicats. Són tres estats diferents, i el registre ha de dir quin s’ha assolit.
 
 Les seqüències, les plantilles i les rúbriques d’aquest document són propostes originals de Circuita. No constitueixen una certificació del kit, de la seguretat d’un muntatge ni d’un sistema de servei real. El pilotatge educatiu i les comprovacions físiques amb el material del centre continuen sent necessaris.
+
+
+---
+
+Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona) amb assistència de la IA.
+
+Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
+
+La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.

@@ -339,3 +339,12 @@ La carpeta `programes/` conté set sketches independents amb guions equivalents 
 `Organitzacio-aula.md` completa els cinc itineraris amb vuit sessions orientatives cadascun, quatre rols, plantilles de proves, calibratge, traça i histèresi, i rúbriques físiques per edat.
 
 Les sortides digitals dels muntatges físics afegeixen una R d’1 kΩ en sèrie amb cada LED com a protecció pròpia de Circuita. M9 és opcional i demana dues resistències d’1 kΩ; si el kit només en té una, M3 continua essent l’alternativa passiva per a les dues zones.
+
+
+---
+
+Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona) amb assistència de la IA.
+
+Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
+
+La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.

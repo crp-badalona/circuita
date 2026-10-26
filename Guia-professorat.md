@@ -510,3 +510,12 @@ La nova versió incorpora `Dossier-muntatge.html` i `Dossier-muntatge.md`, amb d
 La carpeta `programes/` conté set sketches independents amb guions equivalents al dossier. Els fitxers de sensor s’entreguen amb calibratge pendent i LED apagat; el calibrador genera una versió amb les dades mesurades. No s’entreguen fitxers nadius Hello, Blocks! perquè no se n’ha verificat un format d’intercanvi: els guions es reconstrueixen a l’editor, o s’usa la via Arduino IDE amb els INO.
 
 `Organitzacio-aula.md` completa els cinc itineraris amb vuit sessions orientatives cadascun, quatre rols, plantilles de proves, calibratge, traça i histèresi, i rúbriques físiques per edat.
+
+
+---
+
+Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona) amb assistència de la IA.
+
+Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
+
+La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.

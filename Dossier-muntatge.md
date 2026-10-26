@@ -394,3 +394,12 @@ S2: https://steambraceproject.eu/wp-content/uploads/2025/02/STEAMBRACE_WP3_D3.5_
 Arduino: InputPullupSerial, BlinkWithoutDelay i analogRead, documentació oficial.
 
 Els esquemes que afegeixen comandaments, derivacions, rearme, calibratge i programes són propostes pròpies; no s’atribueixen al fabricant. Els LEDs de sèrie poden no il·luminar-se prou amb la font indicada. La primera prova la fa el docent.
+
+
+---
+
+Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona) amb assistència de la IA.
+
+Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
+
+La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.

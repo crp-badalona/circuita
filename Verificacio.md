@@ -51,3 +51,12 @@ Abans d’usar-ho amb alumnat: compara model i inventari, prova M0/M1/M2 o M5 se
 No hi ha una auditoria d’accessibilitat, una validació elèctrica del vostre kit ni un pilotatge amb alumnat.
 
 Les sortides digitals dels muntatges físics afegeixen una R d’1 kΩ en sèrie amb cada LED com a protecció pròpia de Circuita. M9 és opcional i demana dues resistències d’1 kΩ; si el kit només en té una, M3 continua essent l’alternativa passiva per a les dues zones.
+
+
+---
+
+Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona) amb assistència de la IA.
+
+Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
+
+La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.
