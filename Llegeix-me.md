@@ -62,3 +62,8 @@ Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona)
 Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
 
 La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.
+
+
+## Destinataris i progressió vigent
+
+Aquest recurs s’adreça a 4t, 5è i 6è de primària i a 1r i 2n d’ESO. No s’hi assignen propostes a cursos anteriors a 4t. A 4t s’avaluen la funció de les peces, el circuit representat i una taula de dos estats; a 5è, la comparació de comandaments, tres estats i el diagnòstic amb una sola variable; a 6è, la topologia, quatre combinacions i els límits de les conclusions. Els suports DUA es mantenen disponibles a tots els cursos.

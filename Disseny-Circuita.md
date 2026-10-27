@@ -28,9 +28,9 @@ Les franges són punts d’entrada, no etiquetes fixes. El docent i l’alumne p
 
 | Itinerari | Referència | Contingut central | Evidència final |
 |---|---|---|---|
-| Espurnes | 1r–2n de primària | Font, receptor, cable i interruptor; encès/apagat; observació | Fer funcionar una llum i mostrar què passa quan s’obre el camí |
-| Connecta | 3r–4t de primària | Símbols, conductors i aïllants, diagnòstic d’un error | Muntar i explicar un senyal lluminós amb una prova |
-| Inventa | 5è–6è de primària | Sèrie/paral·lel qualitatiu, entrada/sortida, condició simple | Dissenyar una resposta a una necessitat i provar dos casos |
+| 4t de primària | 4t de primària | Font, receptor, cable i interruptor; encès/apagat; observació | Fer funcionar una llum i mostrar què passa quan s’obre el camí |
+| 5è de primària | 5è de primària | Símbols, conductors i aïllants, diagnòstic d’un error | Muntar i explicar un senyal lluminós amb una prova |
+| 6è de primària | 6è de primària | Sèrie/paral·lel qualitatiu, entrada/sortida, condició simple | Dissenyar una resposta a una necessitat i provar dos casos |
 | Investiga | 1r d’ESO | Esquemes, models, variables, lògica i mesures quan el material ho permet | Justificar un circuit i contrastar una predicció amb dades |
 | Automatitza | 2n d’ESO | Llindars, operadors lògics, seqüències, depuració i transferència | Automatització amb proves de límit, excepcions i millora |
 
@@ -73,7 +73,7 @@ Cada càpsula conté una idea, una imatge o esquema amb alternativa textual, una
 | Decisions i seqüències | Diagrama «si… aleshores… altrament» i línia temporal | Diferenciar condició, repetició i espera |
 | Mesura i model, ESO | En un resistor ideal: V = I·R; 3 V / 1.000 Ω = 0,003 A = 3 mA | Canviar una variable i mantenir l’altra constant. Aquest model no descriu directament un LED ni tots els mòduls |
 
-**Exemple de text per a 1r–2n de primària:** «La font dona energia. Els cables fan un camí. Si el camí queda tancat, la llum pot encendre’s. Si obrim l’interruptor, el camí es talla.» Un muntatge mal connectat o un component inadequat també poden impedir l’encesa: camí tancat no vol dir funcionament garantit.
+**Exemple de text per a 4t de primària:** «La font dona energia. Els cables fan un camí. Si el camí queda tancat, la llum pot encendre’s. Si obrim l’interruptor, el camí es talla.» Un muntatge mal connectat o un component inadequat també poden impedir l’encesa: camí tancat no vol dir funcionament garantit.
 
 **Ampliació ESO:** el corrent no es consumeix en travessar la llum; l’energia es transforma. En els cables metàl·lics, el moviment dels electrons té sentit contrari al corrent convencional. Les fletxes didàctiques s’etiqueten «sentit convencional» i la seva animació no representa una velocitat real.
 
@@ -83,15 +83,15 @@ Proposta de 15 missions, cadascuna amb tres reptes. Els noms següents són prop
 
 | Itinerari i missió | Explora | Aplica | Investiga | Comprovació automàtica prevista |
 |---|---|---|---|---|
-| Espurnes · Una llum per llegir | Tancar un circuit preparat | Triar la peça que falta | Fer dos controls d’encesa en contextos diferents | Circuit alimentat, camí complet i estat encès/apagat coherent |
-| Espurnes · Detectius de peces | Relacionar 3 peces i funcions | Associar peça i símbol | Identificar una peça incorrecta en un esquema | Correspondències, amb noms i símbols com a alternatives al color |
-| Espurnes · El camí interromput | Trobar un tall destacat | Trobar un tall sense marca | Comparar dues avaries simples | Identificació del tall i recuperació del funcionament |
-| Connecta · Missatge lluminós | Encendre amb un comandament | Fer un patró manual de 3 passos | Dissenyar un codi amb llegenda accessible | Seqüència d’estats comparada amb el patró escollit |
-| Connecta · Què deixa passar? | Classificar exemples proporcionats | Predir 4 materials i comprovar | Explicar una predicció revisada | Classificació dels casos del simulador; registre real revisat pel docent |
-| Connecta · Taller de reparació | Corregir una connexió | Diagnosticar sense esquema final | Triar la prova que descarta dues hipòtesis | Avaria resolta i selecció d’una prova rellevant |
-| Inventa · Dues llums | Completar sèrie | Comparar sèrie i paral·lel | Dissenyar perquè una branca segueixi encesa | Casos d’obertura de cada branca |
-| Inventa · Racó confortable | Identificar entrada i sortida | Ajustar un llindar simbòlic | Evitar una resposta inadequada en un cas límit | Proves per sota, al llindar i per sobre |
-| Inventa · Senyal per compartir | Completar una taula encès/apagat | Dissenyar un avís amb dos canals | Justificar una alternativa sense so | Compliment dels estats; accessibilitat justificada amb revisió humana |
+| 4t · Una llum per llegir | Tancar un circuit preparat | Triar la peça que falta | Fer dos controls d’encesa en contextos diferents | Circuit alimentat, camí complet i estat encès/apagat coherent |
+| 4t · Detectius de peces | Relacionar 3 peces i funcions | Associar peça i símbol | Identificar una peça incorrecta en un esquema | Correspondències, amb noms i símbols com a alternatives al color |
+| 4t · El camí interromput | Trobar un tall destacat | Trobar un tall sense marca | Comparar dues avaries simples | Identificació del tall i recuperació del funcionament |
+| 5è · Missatge lluminós | Encendre amb un comandament | Fer un patró manual de 3 passos | Dissenyar un codi amb llegenda accessible | Seqüència d’estats comparada amb el patró escollit |
+| 5è · Què deixa passar? | Classificar exemples proporcionats | Predir 4 materials i comprovar | Explicar una predicció revisada | Classificació dels casos del simulador; registre real revisat pel docent |
+| 5è · Taller de reparació | Corregir una connexió | Diagnosticar sense esquema final | Triar la prova que descarta dues hipòtesis | Avaria resolta i selecció d’una prova rellevant |
+| 6è · Dues llums | Completar sèrie | Comparar sèrie i paral·lel | Dissenyar perquè una branca segueixi encesa | Casos d’obertura de cada branca |
+| 6è · Racó confortable | Identificar entrada i sortida | Ajustar un llindar simbòlic | Evitar una resposta inadequada en un cas límit | Proves per sota, al llindar i per sobre |
+| 6è · Senyal per compartir | Completar una taula encès/apagat | Dissenyar un avís amb dos canals | Justificar una alternativa sense so | Compliment dels estats; accessibilitat justificada amb revisió humana |
 | Investiga · Esquemes que expliquen | Passar de muntatge a esquema | Comparar dues topologies | Justificar quin esquema compleix tres restriccions | Connectivitat i proves funcionals, sense exigir una sola disposició |
 | Investiga · Taller de mesures | Calcular I amb V i R donats | Dissenyar una taula de mesures ideal | Contrastar proporcionalitat i límits del model | Unitats i tolerància numèrica especificades |
 | Investiga · Doble condició | Completar una condició AND | Comparar AND i OR | Triar la lògica d’una alarma amb desactivació | Taula exhaustiva dels estats booleans |
@@ -121,9 +121,9 @@ El prototip adjunt implementa A com a panell de condicions i un exemple de C. No
 
 | Activitat | Resposta vàlida | Retorn d’un error |
 |---|---|---|
-| Primària inicial: «Quina peça dona energia?» | La font | «L’interruptor controla el camí. Busca la peça que aporta energia.» |
-| Primària mitjana: «La llum no s’encén: font activa, interruptor tancat, retorn tallat» | Completar el retorn | «L’energia està disponible, però el camí no és complet. Revisa el cable de tornada.» |
-| Primària superior: «En paral·lel obrim només la branca A» | B continua si conserva un camí complet i alimentat | «Les branques tenen camins propis. Segueix el camí de B fins a la font.» |
+| 4t de primària: «Quina peça dona energia?» | La font | «L’interruptor controla el camí. Busca la peça que aporta energia.» |
+| 5è de primària: «La llum no s’encén: font activa, interruptor tancat, retorn tallat» | Completar el retorn | «L’energia està disponible, però el camí no és complet. Revisa el cable de tornada.» |
+| 6è de primària: «En paral·lel obrim només la branca A» | B continua si conserva un camí complet i alimentat | «Les branques tenen camins propis. Segueix el camí de B fins a la font.» |
 | 1r ESO: «3 V i 1.000 Ω; corrent en mA?» | 3 mA; tolerància ±0,05 mA | «Calcula V/R en amperes i multiplica per 1.000 per obtenir mA.» |
 | 2n ESO: «Encendre si L < 30; què passa a L = 30?» | Apagat | «< no inclou la igualtat. Comprova també 29 i 31.» |
 
@@ -167,7 +167,7 @@ Durada orientativa: 5–10 minuts, adaptable.
 1. Identifica la font entre font, llum i interruptor. Clau: font.
 2. Prediu si una llum s’encendrà amb l’interruptor obert. Clau: no, camí interromput.
 3. Assenyala en un dibuix què cal revisar si falta retorn. Clau: continuïtat del retorn.
-4. Primària superior/ESO: prediu què passa a una branca independent quan s’obre l’altra. Clau: pot continuar alimentada.
+4. 6è de primària/ESO: prediu què passa a una branca independent quan s’obre l’altra. Clau: pot continuar alimentada.
 5. ESO: interpreta «si entrada activa i sistema habilitat, encén». Clau: calen totes dues condicions.
 
 Registre: concepte observat / encara no observat / no s’ha pogut obtenir evidència / suport que facilita l’accés. Una absència d’evidència no s’equipara automàticament a desconeixement.
@@ -188,9 +188,9 @@ Aplicació: coneixement del criteri abans de començar, observació durant les p
 
 | Itinerari | Exemple d’«Assolit» en proves i depuració |
 |---|---|
-| Espurnes | Mostra el canvi en obrir i tancar i indica on queda el tall |
-| Connecta | Localitza un error i mostra el funcionament abans/després |
-| Inventa | Contrasta dos casos i explica una diferència entre camins |
+| 4t de primària | Mostra el canvi en obrir i tancar i indica on queda el tall |
+| 5è de primària | Localitza un error i mostra el funcionament abans/després |
+| 6è de primària | Contrasta dos casos i explica una diferència entre camins |
 | Investiga | Controla una variable, registra resultats i explica la causa probable |
 | Automatitza | Prova casos normals, de límit i d’aturada i revisa el programa |
 
@@ -202,7 +202,7 @@ Cinc eixos, valorats de l’1 al 4: «Entenc el circuit», «Puc predir», «Com
 
 Ancoratges: 1 = encara no ho puc mostrar; 2 = ho mostro parcialment amb ajuda conceptual; 3 = ho mostro en el repte actual; 4 = ho aplico i justifico en un cas nou. Els suports d’accés no redueixen el nivell.
 
-Abans del repte: marcar previsió i una fita. Després: marcar evidència actual i respondre «Quina prova em fa posar aquest nivell?» i «Quin serà el meu següent pas?». A primària inicial es poden fer servir quatre anells amb frases llegides i una conversa breu. El gràfic sempre té una taula equivalent.
+Abans del repte: marcar previsió i una fita. Després: marcar evidència actual i respondre «Quina prova em fa posar aquest nivell?» i «Quin serà el meu següent pas?». A 4t de primària es poden fer servir quatre anells amb frases llegides i una conversa breu. El gràfic sempre té una taula equivalent.
 
 La coavaluació necessita un exemple observat, una fortalesa i una proposta concreta: «He vist que…», «Això ajuda perquè…», «Provaria…». No es puntuen persones ni es publica la diana del company. No s’utilitza com a nota automàtica.
 
@@ -248,9 +248,9 @@ Registre docent: alumne o àlies, objectiu, tasca, data, evidència, descriptor 
 
 | Itinerari | Repte | Casos d’èxit |
 |---|---|---|
-| Espurnes | Fer encendre i apagar la llum | Font activada + interruptor tancat + camí complet = encès; interruptor obert = apagat |
-| Connecta | Diagnosticar un retorn tallat | Identificar el tall, reparar amb alimentació desconnectada i repetir la prova |
-| Inventa | Fer que dues zones tinguin camins independents, al simulador o si el kit ho permet | Obrir cada branca per separat i observar l’altra |
+| 4t de primària | Fer encendre i apagar la llum | Font activada + interruptor tancat + camí complet = encès; interruptor obert = apagat |
+| 5è de primària | Diagnosticar un retorn tallat | Identificar el tall, reparar amb alimentació desconnectada i repetir la prova |
+| 6è de primària | Fer que dues zones tinguin camins independents, al simulador o si el kit ho permet | Obrir cada branca per separat i observar l’altra |
 | Investiga | Simular la decisió L < 30 | L = 29 encès; L = 30 apagat; L = 31 apagat; justificar l’operador |
 | Automatitza | Afegir una entrada «habilitat» | Encès només si habilitat i L < 30; provar habilitat fals amb L = 0 |
 
@@ -315,9 +315,9 @@ La pantalla inicial és ara «Reptes per etapa». Hi ha 15 activitats operatives
 
 | Etapa | Guiat | Continuïtat | Millora |
 |---|---|---|---|
-| 1r–2n primària | Llum per al racó de lectura | Diagnosticar un tall | Polsador d’ajuda |
-| 3r–4t primària | Avís de torn de lectura | Missatge mantingut amb interruptor | Taller de reparació |
-| 5è–6è primària | Dues zones al passeig marítim | Sèrie o paral·lel | Controls segons ús de les zones |
+| 4t de primària | Llum per al racó de lectura | Diagnosticar un tall | Polsador d’ajuda |
+| 5è de primària | Avís de torn de lectura | Missatge mantingut amb interruptor | Taller de reparació |
+| 6è de primària | Dues zones al passeig marítim | Sèrie o paral·lel | Controls segons ús de les zones |
 | 1r ESO | Camí de maqueta de Ca l’Arnús amb llindar | Habilitació i AND | Depuració de < i ≤ |
 | 2n ESO | Avís seqüenciat de maqueta del litoral | Histèresi | Auditoria d’aturada prioritària |
 
@@ -348,3 +348,8 @@ Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona)
 Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
 
 La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.
+
+
+## Destinataris i progressió vigent
+
+Aquest recurs s’adreça a 4t, 5è i 6è de primària i a 1r i 2n d’ESO. No s’hi assignen propostes a cursos anteriors a 4t. A 4t s’avaluen la funció de les peces, el circuit representat i una taula de dos estats; a 5è, la comparació de comandaments, tres estats i el diagnòstic amb una sola variable; a 6è, la topologia, quatre combinacions i els límits de les conclusions. Els suports DUA es mantenen disponibles a tots els cursos.

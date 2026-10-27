@@ -59,7 +59,7 @@ Un punt pendent impedeix activar aquell muntatge físic, però no impedeix treba
 
 ## 2. Una estructura de sessió que es repeteix
 
-Durada orientativa: 45–60 minuts. A cicle inicial es pot dividir una sessió en dos blocs més curts. No hi ha cap tasca que s’hagi de puntuar per rapidesa.
+Durada orientativa: 45–60 minuts. A 4t de primària es pot dividir una sessió en dos blocs més curts. No hi ha cap tasca que s’hagi de puntuar per rapidesa.
 
 | Moment | Temps orientatiu | Què es fa | Quina evidència queda |
 |---|---:|---|---|
@@ -77,24 +77,24 @@ Cada itinerari és independent. No s’espera que una classe de primària comple
 
 Per fer **sis sessions**, es poden unir les sessions 3–4 i 7–8 en dos blocs més llargs, sempre que es mantinguin les proves i la reflexió individual. Si el grup necessita més temps, es conserva la seqüència de vuit i es fragmenten els blocs de pràctica.
 
-### A. 1r–2n de primària · Un racó de lectura a l’aula
+### A. 4t de primària · Un racó de lectura a l’aula
 
 Activitats de l’app: **Una llum per al racó de lectura** → **La llum de la maqueta s’ha apagat** → **Una llum només quan la demanem**.
 
-Fita física: reconèixer font, comandament i receptor; mostrar què passa quan s’obre o es tanca el camí. No s’exigeix una explicació amb fórmules ni escriptura extensa.
+Fita física de 4t: identificar les funcions, representar el camí i justificar dos estats amb una taula de predicció i observació. Es pot explicar amb text, oralment o amb esquema comentat.
 
 | Sessió | Encàrrec i acció pràctica | Evidència i instrument |
 |---|---|---|
 | 1 · Observem | Dibuixar un racó de lectura de la classe. Observar les peces sense alimentació. Rutina **Veig – penso – em pregunto** amb gest, dibuix o conversa. | Registre inicial de tres idees; no es posa nota. |
-| 2 · Prediem i simulem | Fer el repte guiat. El docent segueix un camí en veu alta i mostra l’efecte d’un interruptor. L’alumnat prova obert/tancat amb controls accessibles. | Targetes «encès/apagat» i una predicció. |
+| 2 · Prediem i simulem | Fer el repte guiat. El docent segueix un camí en veu alta i mostra l’efecte d’un interruptor. L’alumnat prova obert/tancat amb controls accessibles. | Taula de dos estats amb predicció, observació i justificació del canvi. |
 | 3 · Preparem | Identificar les peces de la fitxa física i preparar-les desconnectades. Seguir la pauta validada, amb suport manipulatiu quan calgui. | Llista de comprovació amb observació docent. |
-| 4 · Fem funcionar | Activar el muntatge després de la revisió. Mostrar dos estats i assenyalar on es talla el camí. | Rúbrica de cicle inicial i una demostració individual breu. |
-| 5 · Reparem | Fer la continuïtat: el docent representa una interrupció segura amb alimentació desconnectada. Predir, localitzar el tall i repetir les proves després de restaurar. | Fitxa abans/després amb dibuixos. |
+| 4 · Fem funcionar | Activar el muntatge després de la revisió. Mostrar dos estats i assenyalar on es talla el camí. | Rúbrica de 4t de primària i una demostració individual breu. |
+| 5 · Reparem | Fer la continuïtat: el docent representa una interrupció segura amb alimentació desconnectada. Predir, localitzar el tall i repetir les proves després de restaurar. | Fitxa abans/després amb hipòtesi, esquema i una conclusió sostinguda en la prova. |
 | 6 · Triem millor | Fer la millora amb polsador, si està disponible i validat. Comparar «mentre premo» i «quan deixo». Si no, comparar al simulador i explicar el resultat. | Semàfor verbal: ho mostro / ho estic provant / necessito revisar-ho. |
 | 7 · Contextualitzem | Integrar el muntatge en una maqueta de cartró sense tapar connexions ni dificultar la revisió. Preparar un rètol amb paraula i símbol. | Coobservació de claredat del missatge. |
 | 8 · Compartim i pensem | Mostrar una prova a una altra parella i explicar el canvi. Recollir material desconnectat. | Tiquet: «Abans pensava… Ara he vist… Ho puc mostrar…». |
 
-### B. 3r–4t de primària · Compartim la lectura sense interrompre
+### B. 5è de primària · Compartim la lectura sense interrompre
 
 Activitats: **Un avís per compartir la lectura** → **Un missatge que es manté** → **El taller de reparació del barri**.
 
@@ -111,7 +111,7 @@ Fita física: escollir entre polsador i interruptor segons l’ús, comprovar re
 | 7 · Fem-lo entenedor | Preparar una llegenda amb text i símbol i acordar un canal complementari segons el grup. No activar so per defecte. | Revisió d’accessibilitat del missatge per una altra parella. |
 | 8 · Expliquem amb proves | Demostració del comandament triat i una prova que el distingeix de l’alternativa. | Tiquet: «Quina observació m’ha fet revisar la tria? En quin altre lloc la faria servir?». |
 
-### C. 5è–6è de primària · Dues zones del passeig marítim
+### C. 6è de primària · Dues zones del passeig marítim
 
 Activitats: **Dues llums al passeig** → **Dos camins o un de sol?** → **Una zona en ús, una zona apagada**.
 
@@ -120,7 +120,7 @@ Fita física: demostrar independència amb dos casos d’obertura, contrastar to
 | Sessió | Encàrrec i acció pràctica | Evidència i instrument |
 |---|---|---|
 | 1 · Definim el requisit | Dibuixar dues zones d’una maqueta del passeig. Explicar què vol dir «una pot continuar si desactivem l’altra». | Rutina **Penso – comprovo – reviso** i esquema inicial. |
-| 2 · Simulem dos camins | Fer el repte guiat i les proves totes dues / només A / només B. | Taula de predicció i resultat. |
+| 2 · Simulem dos camins | Fer el repte guiat i les proves totes dues / només A / només B / cap. | Taula de les quatre combinacions A/B amb predicció i resultat. |
 | 3 · Preparem la maqueta | Contrastar la fitxa física de dues sortides, els components auxiliars i els comandaments realment disponibles. Preparar desconnectat. | Checklist d’inventari i revisió docent. |
 | 4 · Provem independència | Activar després de revisió i comprovar cada branca per separat. Si només hi ha un comandament físic, els canvis de configuració els fa el docent o l’alumnat autoritzat amb alimentació desconnectada. | Rúbrica del nivell i evidència de dos casos inversos. |
 | 5 · Comparem topologies | Fer la continuïtat. Contrastar sèrie/paral·lel al simulador i, només si la fitxa ho habilita, al maletí. No imposar un muntatge sèrie no verificat. | Rutina **Compara i contrasta**, amb una prova discriminant. |
@@ -181,7 +181,7 @@ El kit és una estació compartida; no cal que tota la classe esperi davant del 
 
 Organitza equips petits i torns que permetin a tothom intervenir en la prova real al llarg de la seqüència. Si el nombre d’equips supera el nombre d’estacions, duplica les tasques sense maquinari; no dupliquis un muntatge físic sense el material necessari.
 
-El docent es queda a l’estació física en les primeres sessions. Un equip només hi arriba amb la predicció i el pla de prova preparats. A primària inicial, els grups que no són al kit necessiten una tasca curta i visual que puguin reprendre sense perdre el fil.
+El docent es queda a l’estació física en les primeres sessions. Un equip només hi arriba amb la predicció i el pla de prova preparats. A 4t de primària, els grups que no són al kit necessiten una tasca curta i visual que puguin reprendre sense perdre el fil.
 
 Una sola demostració docent pot introduir el concepte, però no prova que cada alumne sàpiga muntar. Per recollir evidència individual, demana a cadascú que dirigeixi una acció, assenyali un camí, anticipi un resultat o expliqui una prova. Si no ha pogut demostrar una destresa física, registra «encara no observada».
 
@@ -208,7 +208,7 @@ Els rols són funcions de treball, no etiquetes de capacitat. Manipular, llegir 
 | 3 | Proves | Comunicació | Planificació | Muntatge |
 | 4 | Muntatge | Proves | Comunicació | Planificació |
 
-Després del quart torn es repeteix el cicle o s’ajusta segons els objectius encara no observats. Es pot rotar per bloc de prova en lloc de per sessió. A cicle inicial, mostra només el rol actual i una consigna breu.
+Després del quart torn es repeteix el cicle o s’ajusta segons els objectius encara no observats. Es pot rotar per bloc de prova en lloc de per sessió. A 4t de primària, mostra només el rol actual i una consigna breu.
 
 ### Targeta imprimible 1 · Planifico el següent pas
 
@@ -286,7 +286,7 @@ Després del quart torn es repeteix el cicle o s’ajusta segons els objectius e
 
 **Propera prova:** _________________________________________________________
 
-**Alternativa per a 1r–2n:** substituir les columnes per dibuixos o targetes «abans / faig això / després» i una frase dictada. Es manté la distinció entre predicció i observació.
+**Alternativa d’accés per a 4t de primària:** substituir les columnes per dibuixos o targetes «abans / faig això / després» i una frase dictada. Es manté la distinció entre predicció i observació.
 
 ### Plantilla B · Diagnòstic i reparació abans/després
 
@@ -371,7 +371,7 @@ S’utilitzen els mateixos quatre ancoratges en totes les edats: **1 · encara i
 
 Si no s’ha pogut recollir una evidència, s’anota **NO · no observat**, sense confondre-ho amb el nivell 1. No es calcula una mitjana automàtica. Una pràctica insegura requereix aturar, acompanyar i tornar a preparar; una bona valoració en altres criteris no la compensa.
 
-### 1r–2n de primària
+### 4t de primària
 
 | Criteri | 1 · Inicial | 2 · En procés | 3 · Assolit | 4 · Transferència |
 |---|---|---|---|---|
@@ -380,9 +380,9 @@ Si no s’ha pogut recollir una evidència, s’anota **NO · no observat**, sen
 | Explica el tall | Diu només que no funciona | Troba el tall quan li donen la resposta o el lloc | Assenyala on s’interromp el camí i mostra què canvia en restaurar-lo | Localitza un tall en una representació nova |
 | Cuida el procediment | Encara intenta modificar sense aplicar la pauta | Aplica la pauta després de recordatoris | Espera la desconnexió/revisió i avisa abans d’un canvi | Recorda i explica una precaució pertinent a una altra parella |
 
-**Altre instrument:** conversa amb tres targetes i registre abans/després amb dibuixos. **Tiquet:** «Abans pensava… Ara he vist…».
+**Altre instrument:** semàfor de comprensió amb una evidència i registre de predicció, prova i revisió. **Tiquet:** «Abans pensava… Ara he vist…».
 
-### 3r–4t de primària
+### 5è de primària
 
 | Criteri | 1 · Inicial | 2 · En procés | 3 · Assolit | 4 · Transferència |
 |---|---|---|---|---|
@@ -393,7 +393,7 @@ Si no s’ha pogut recollir una evidència, s’anota **NO · no observat**, sen
 
 **Altre instrument:** taula de tres estats i coavaluació «He vist que… Et proposo provar…». **Tiquet:** una observació que ha fet revisar la tria.
 
-### 5è–6è de primària
+### 6è de primària
 
 | Criteri | 1 · Inicial | 2 · En procés | 3 · Assolit | 4 · Transferència |
 |---|---|---|---|---|
@@ -478,3 +478,8 @@ Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona)
 Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
 
 La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.
+
+
+## Destinataris i progressió vigent
+
+Aquest recurs s’adreça a 4t, 5è i 6è de primària i a 1r i 2n d’ESO. No s’hi assignen propostes a cursos anteriors a 4t. A 4t s’avaluen la funció de les peces, el circuit representat i una taula de dos estats; a 5è, la comparació de comandaments, tres estats i el diagnòstic amb una sola variable; a 6è, la topologia, quatre combinacions i els límits de les conclusions. Els suports DUA es mantenen disponibles a tots els cursos.

@@ -38,7 +38,7 @@ Eines oficials descarregades de les distribucions d’Arduino dins de l’espai 
 ## Comprovacions de l’aplicació
 
 - Dossier: 4.182 comprovacions de calibratge, generació de codi, correspondències, fitxes i estructura de programes.
-- Motor de reptes de l’alumnat: 520 comprovacions superades després d’integrar el dossier.
+- Motor de reptes de l’alumnat: 522 comprovacions superades després d’integrar el dossier.
 - Guia docent: 764 comprovacions de lògica/contingut i 41 d’esdeveniments del runtime amb DOM simulat, de la versió anterior a l’enllaç al dossier.
 - En navegador: calibratge amb dues sèries vàlides, conversió intermèdia a 50/100, rebuig de sèries massa properes, ocultació del generador quan les dades no són vàlides, filtre d’etapa i revelació de connexions.
 

@@ -132,11 +132,11 @@ Treballa primer en simulació. Per al muntatge real confirma inventari, manual, 
 
 ## Cinc recorreguts de modelatge
 
-### 1r–2n de primària · Una llum per al racó de lectura
+### 4t de primària · Una llum per al racó de lectura
 
 **Context:** Una aula de Badalona. A la maqueta del racó de lectura volem decidir quan hi ha llum. Construïm un model petit per entendre el camí elèctric; no modifiquem la instal·lació de l’escola.
 
-**Fita:** Identificar la font, la llum i l’interruptor, i explicar què canvia quan el camí queda obert.
+**Fita:** Construir i representar el circuit, identificar la funció de cada peça i explicar dos estats amb evidències.
 
 **Material:** Font educativa autoritzada, interruptor, mòdul LED adequat i connexions compatibles amb el vostre kit. El simulador representa una llum genèrica.
 
@@ -146,7 +146,7 @@ Treballa primer en simulació. Per al muntatge real confirma inventari, manual, 
 
 **Resultat esperat:** La llum queda apagada perquè el camí està interromput a l’interruptor.
 
-**Modelatge en veu alta:** «No començaré tocant totes les peces. Primer segueixo el camí amb el dit: surto de la font, arribo a l’interruptor, passo per la llum i torno a la font. Aquí el camí queda tallat. Predic que la llum estarà apagada. Tanco només l’interruptor i comprovo la predicció.»
+**Modelatge en veu alta:** «No començaré tocant totes les peces. Primer segueixo el camí amb el dit: surto de la font, arribo a l’interruptor, passo per la llum i torno a la font. Aquí el camí queda tallat. Predic que la llum estarà apagada. Tanco només l’interruptor i comprovo la predicció.» «Ara organitzo una taula amb dues files: interruptor obert i tancat. Distingeixo què predeia de què he observat i relaciono el canvi amb la continuïtat.»
 
 **Pràctica guiada:**
 
@@ -155,6 +155,7 @@ Treballa primer en simulació. Per al muntatge real confirma inventari, manual, 
 3. Tanca només l’interruptor. Compara l’estat de la llum amb la predicció.
 4. Obre només el retorn: la llum s’apaga tot i tenir l’interruptor tancat. Després restaura el retorn.
 5. Trasllada la idea al maletí: amb l’alimentació desconnectada prepara el muntatge segons el manual, demana la revisió acordada i prova encès/apagat.
+6. Representa el circuit amb noms o símbols i completa una taula de predicció/resultat per a dos estats.
 
 **Proves:**
 
@@ -200,11 +201,14 @@ Clau: 2. El camí ha de ser complet també en el retorn. Tancar només l’inter
 
 [Obre el repte corresponent de l’alumnat](Circuita.html#repte=p1-light).
 
-### 3r–4t de primària · Un avís visual per demanar torn
+
+**Evidència del curs:** Rúbrica de 4t: funcions, representació del circuit, prova de dos estats i explicació d’un tall. Afegeix un semàfor amb una evidència i un tiquet sobre la predicció revisada.
+
+### 5è de primària · Un avís visual per demanar torn
 
 **Context:** Club de lectura d’una escola de Badalona. Al club de lectura volem demanar torn amb un avís visual sense interrompre la persona que parla. El disseny ha d’evitar dependre només d’un so.
 
-**Fita:** Distingir un polsador d’un interruptor i relacionar entrada, resposta i retorn a l’estat inicial.
+**Fita:** Justificar la tria entre polsador i interruptor amb tres estats, una comparació i un diagnòstic controlat.
 
 **Material:** Font educativa, polsador i mòdul LED compatibles. El brunzidor és opcional i no necessari per assolir l’objectiu.
 
@@ -223,6 +227,7 @@ Clau: 2. El camí ha de ser complet també en el retorn. Tancar només l’inter
 3. Al model, activa «polsador premut». Observa la llum i l’etiqueta textual.
 4. Desactiva «polsador premut». Explica què es manté i què canvia.
 5. Amb el material real desconnectat prepara el muntatge validat. Prova tres vegades prémer/deixar i registra els resultats.
+6. Formula dues hipòtesis d’avaria i proposa una prova que en descarti una canviant una sola condició.
 
 **Proves:**
 
@@ -268,11 +273,14 @@ Clau: 2. La prova de deixar el comandament revela si conserva la posició o torn
 
 [Obre el repte corresponent de l’alumnat](Circuita.html#repte=p2-button).
 
-### 5è–6è de primària · Dues zones d’un passeig en maqueta
+
+**Evidència del curs:** Rúbrica de 5è: tria del comandament, representació, contrast repòs/acció/alliberament i diagnòstic. Afegeix coavaluació amb evidència i proposta concreta.
+
+### 6è de primària · Dues zones d’un passeig en maqueta
 
 **Context:** Passeig marítim de Badalona. A la maqueta del passeig marítim volem il·luminar dues zones de manera independent. Si desconnectem una zona per revisar-la, l’altra ha de continuar funcionant en el model.
 
-**Fita:** Comparar sèrie i paral·lel per connectivitat, predir què passa quan s’obre un camí i justificar la tria.
+**Fita:** Justificar dues branques independents amb quatre combinacions, contrastar sèrie/paral·lel i explicitar els límits sobre brillantor i consum.
 
 **Material:** Font educativa adequada, dos mòduls llum, comandaments i connexions segons el manual. La construcció física depèn de l’equipament; la maqueta no es connecta a cap instal·lació urbana.
 
@@ -291,6 +299,7 @@ Clau: 2. La prova de deixar el comandament revela si conserva la posició o torn
 3. Tria «paral·lel» i repeteix exactament la mateixa prova.
 4. Obre B i mantén A tancada. Registra el resultat invers.
 5. Justifica la topologia escollida amb dues proves. Construeix físicament només segons una pauta compatible amb el kit.
+6. Completa les quatre combinacions A/B, inclòs cap camí activat, i explica quina prova discrimina la topologia.
 
 **Proves:**
 
@@ -335,6 +344,9 @@ Clau: 2. La prova de deixar el comandament revela si conserva la posició o torn
 Clau: 2. L’estat final encès pot aparèixer en diverses topologies. Les proves d’obertura separada aporten evidència d’independència.
 
 [Obre el repte corresponent de l’alumnat](Circuita.html#repte=p3-parallel).
+
+
+**Evidència del curs:** Rúbrica de 6è: topologia, requisit d’independència, cobertura de quatre casos i límits del model. Afegeix diana amb evidències i defensa d’una millora.
 
 ### 1r d’ESO · Una llum que respon a l’entorn
 
@@ -519,3 +531,8 @@ Aplicació creada per [CRP Badalona](https://serveiseducatius.xtec.cat/badalona)
 Obra sota llicència [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca).
 
 La llicència s’aplica a les aportacions pròpies de Circuita. Les imatges Cirkids, les fonts documentals i els altres materials de tercers conserven les atribucions i els drets indicats a les fonts; no se’ls atribueix aquesta llicència.
+
+
+## Destinataris i progressió vigent
+
+Aquest recurs s’adreça a 4t, 5è i 6è de primària i a 1r i 2n d’ESO. No s’hi assignen propostes a cursos anteriors a 4t. A 4t s’avaluen la funció de les peces, el circuit representat i una taula de dos estats; a 5è, la comparació de comandaments, tres estats i el diagnòstic amb una sola variable; a 6è, la topologia, quatre combinacions i els límits de les conclusions. Els suports DUA es mantenen disponibles a tots els cursos.

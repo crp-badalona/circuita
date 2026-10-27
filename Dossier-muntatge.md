@@ -4,7 +4,7 @@ La versió HTML té guia de connexions, calibrador i descàrrega de programes. R
 
 ## M0 · Primer circuit documentat
 
-Preparació docent i 1r–2n de primària. Reproducció de les connexions de la làmina oficial 1; revisada visualment, no provada al vostre maletí.
+Preparació docent i 4t de primària. Reproducció de les connexions de la làmina oficial 1; revisada visualment, no provada al vostre maletí.
 
 Material: Font Cirkids de 4,5 V amb 3 piles AAA; Resistència de 100 Ω; Mòdul LED vermell; 3 cables banana compatibles.
 
@@ -35,7 +35,7 @@ Font: S1 · pàgina 1.
 
 ## M1 · Llum amb interruptor
 
-1r–4t de primària. Adaptació pròpia del circuit S1: afegir un comandament en sèrie.
+4t de primària; continuïtat a 5è. Adaptació pròpia del circuit S1: afegir un comandament en sèrie.
 
 Material: M0: font, R 100 Ω i LED; 1 interruptor Cirkids; 4 cables.
 
@@ -68,7 +68,7 @@ Font: S1 + adaptació Circuita.
 
 ## M2 · Avís amb polsador
 
-1r–4t de primària. Adaptació pròpia de M0: substituir el comandament per un polsador.
+4t de primària; continuïtat a 5è. Adaptació pròpia de M0: substituir el comandament per un polsador.
 
 Material: Font de piles, R 100 Ω, LED; 1 polsador Cirkids; 4 cables.
 
@@ -101,7 +101,7 @@ Font: S1 + adaptació Circuita.
 
 ## M3 · Dues branques amb els comandaments del kit
 
-5è–6è de primària. Disseny propi de dues branques; polaritat del mòdul bicolor contrastada amb S2, pàgina 190.
+6è de primària. Disseny propi de dues branques; polaritat del mòdul bicolor contrastada amb S2, pàgina 190.
 
 Material: Font de piles; LED vermell i LED bicolor; R 100 Ω i R 1 kΩ; Interruptor i polsador; 8 unions de cable; alguns nodes han d’acceptar més d’un conductor segons els connectors del kit.
 
@@ -139,7 +139,7 @@ Font: Disseny Circuita; S1 i S2 per als components.
 
 ## M4 · Comparació física amb sèrie
 
-5è–6è de primària; ampliació ESO. Experiment propi de comparació amb dues càrregues diferents; el model virtual no prediu la brillantor.
+6è de primària; ampliació ESO. Experiment propi de comparació amb dues càrregues diferents; el model virtual no prediu la brillantor.
 
 Material: Font de piles; Interruptor; R 100 Ω; LED vermell i bicolor; 5 cables.
 
@@ -173,7 +173,7 @@ Font: Disseny experimental Circuita.
 
 ## M5 · Primera sortida del microcontrolador
 
-Preparació docent; primària superior i ESO. Connexió del mòdul LED a un pin digital i GND documentada a S2, pàgina 190. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.
+Preparació docent; 6è de primària i ESO. Connexió del mòdul LED a un pin digital i GND documentada a S2, pàgina 190. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.
 
 Material: Controlador Cirkids compatible UNO; Mòdul LED vermell; 3 cables; Ordinador i cable USB de dades compatible; R 1 kΩ en sèrie amb el LED: protecció addicional proposada per Circuita.
 
@@ -205,7 +205,7 @@ Font: S2, pàgina 190; programa propi.
 
 ## M6 · Sensor de llum, calibratge i habilitació
 
-1r d’ESO; ampliació de 5è–6è. Topologia sensor–resistència–entrada documentada a S2, pàgines 187–188. Valor 10 kΩ, A0 i programes: selecció de treball de Circuita. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.
+1r d’ESO; ampliació de 6è de primària. Topologia sensor–resistència–entrada documentada a S2, pàgines 187–188. Valor 10 kΩ, A0 i programes: selecció de treball de Circuita. La resistència de sortida d’1 kΩ és una protecció addicional de Circuita.
 
 Material: Controlador i USB de dades; Sensor de llum Cirkids; R 10 kΩ; Mòdul LED vermell; 7 unions bàsiques; 2 unions opcionals per a habilitació; Interruptor opcional per a habilitació; R 1 kΩ en sèrie amb el LED: protecció addicional proposada per Circuita.
 
@@ -328,7 +328,7 @@ Font: M6 + desenvolupament propi.
 
 ## M9 · Dues zones programades, alternativa
 
-Primària superior amb modelatge; ESO. D11 per al LED i D10 per al bicolor documentats a S2, pàgina 190. Controls i programa propis. S’hi afegeixen dues R d’1 kΩ com a protecció de les sortides.
+6è de primària amb modelatge; ESO. D11 per al LED i D10 per al bicolor documentats a S2, pàgina 190. Controls i programa propis. S’hi afegeixen dues R d’1 kΩ com a protecció de les sortides.
 
 Material: Controlador USB; LED vermell i mòdul bicolor; Interruptor i polsador; 10 unions; 2 resistències d’1 kΩ: si el maletí només en té una, cal compartir la segona amb un altre kit o mantenir M3 com a alternativa sense programar.
 
